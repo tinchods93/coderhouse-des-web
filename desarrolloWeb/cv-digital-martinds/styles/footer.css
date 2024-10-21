@@ -1,0 +1,45 @@
+.footer {
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+  padding: 1em;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  font-size: small;
+  justify-content: space-between;
+}
+
+.footer i {
+  font-size: 3em;
+}
+
+.footer ul {
+  text-transform: uppercase;
+}
+
+.footer strong {
+  color: var(--secondary-color);
+}
+
+.footer .color-quaternary {
+  font-weight: 700;
+}
+
+.footer a {
+  color: white;
+  font-weight: 300;
+}
+
+@media screen and (min-width: 768px) {
+  .md\:footer {
+    flex-direction: row;
+    font-size: small;
+    min-height: fit-content;
+  }
+
+  .md\:footer ul {
+    text-transform: uppercase;
+    flex-direction: row;
+  }
+}

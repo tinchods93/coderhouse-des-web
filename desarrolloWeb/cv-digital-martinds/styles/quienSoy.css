@@ -1,0 +1,35 @@
+#img-collage-perfil {
+  padding: 0px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  max-width: 400px;
+  max-height: 400px;
+  min-width: 200px;
+  min-height: 200px;
+  border-radius: 0.6em;
+  border: 0.6em solid white;
+  margin-top: 5em;
+}
+
+#container-img-collage-perfil {
+  display: flex;
+  width: 100%;
+}
+#section-elevator-pitch {
+  display: flex;
+  width: 100%;
+}
+
+#section-elevator-pitch article {
+  text-align: justify;
+}
+
+@media screen and (min-width: 768px) {
+  #img-collage-perfil {
+    /* padding: 0px; */
+    margin-top: 0px;
+    max-width: 480px;
+    max-height: 480px;
+  }
+}

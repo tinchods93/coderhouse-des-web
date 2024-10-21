@@ -3,211 +3,260 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/commonStyles.css" />
+    <link rel="stylesheet" href="../styles/commonStyles.css" />
+    <link rel="stylesheet" href="../styles/footer.css" />
+    <link rel="stylesheet" href="../styles/navbar.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet" />
     <title>Curriculum</title>
   </head>
   <body>
     <header>
-      <nav class="flex">
+      <nav class="flex md:hidden" id="nav-mobile">
         <div>
-          <a href="#">
+          <button>
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </nav>
+      <nav class="roboto-mono-100 hidden md:flex" id="nav-desktop">
+        <div class="px-8 h-full items-center flex">
+          <a href="./index.html">
             <strong>Martín</strong>
             dos Santos
           </a>
         </div>
-        <ul class="flex">
-          <li><a href="./quienSoy.html">¿Quién Soy?</a></li>
-          <li><a href="./curriculum.html">Curriculum</a></li>
-          <li><a href="./portfolio.html">Portafolios</a></li>
-          <li><a href="./contact.html">Contacto</a></li>
-          <li><a href="https://github.com/tinchods93">Github</a></li>
-          <li>
-            <a href="https://www.instagram.com/martin.dossantoss/">Instagram</a>
-          </li>
-        </ul>
+        <div>
+          <ul class="flex h-full gap-12 px-8">
+            <li>
+              <a href="./quienSoy.html">¿Quién Soy?</a>
+            </li>
+            <li>
+              <a href="./curriculum.html" class="color-quaternary"
+                >Curriculum</a
+              >
+            </li>
+            <li><a href="./portfolio.html">Portafolios</a></li>
+            <li><a href="./contact.html">Contacto</a></li>
+            <li>
+              <a href="https://github.com/tinchods93"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/martin.dossantoss/"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
     <main>
-      <section name="tecnologias">
-        <h2>TECNOLOGÍAS</h2>
-        <ul>
-          <li><i>IMG</i> AWS</li>
-          <li><i>IMG</i> Serverless Framework</li>
-          <li><i>IMG</i> NodeJs</li>
-          <li><i>IMG</i> TypeScript</li>
-          <li><i>IMG</i> MongoDB</li>
-          <li><i>IMG</i> Express</li>
-          <li><i>IMG</i> React</li>
-          <li><i>IMG</i> Tailwind</li>
-          <li><i>IMG</i> Gitlab</li>
-          <li><i>IMG</i> Datadog</li>
-          <li><i>IMG</i> Jira</li>
-        </ul>
-      </section>
-      <section name="experiencia">
-        <h2>EXPERIENCIA</h2>
-        <ul>
-          <li>
-            <div>
-              <span>2021</span>
-              <span>al</span>
-              <span>2022</span>
-            </div>
-            <div>
-              <span><strong>Incluit</strong></span>
-              <span>Backend Developer Ssr</span>
-            </div>
-          </li>
-          <li>
-            <div>
-              <span>2022</span>
-              <span>al</span>
-              <span>Actualidad</span>
-            </div>
-            <div>
-              <span><strong>Naranja X</strong></span>
-              <span>Software Engineer Sr</span>
-            </div>
-          </li>
-        </ul>
-      </section>
-      <section name="experiencia">
-        <h2>EDUCACIÓN</h2>
-        <ul>
-          <li>
-            <div>
-              <span>2019</span>
-              <span>al</span>
-              <span>Actualidad</span>
-            </div>
-            <div>
-              <span><strong>Ingeniería en Sistemas</strong></span>
-              <span>UnLaR</span>
-            </div>
-          </li>
-          <li>
-            <div>
-              <span>2011</span>
-            </div>
-            <div>
-              <span><strong>Secundario</strong></span>
-              <span>Colegio N°1 Joaquin Victor Gonzalez</span>
-            </div>
-          </li>
-        </ul>
-      </section>
-      <section name="experiencia">
-        <h2>CERTIFICACIONES</h2>
-        <ul>
-          <li>
-            <div>
-              <span>2024</span>
-            </div>
-            <div>
-              <span><strong>Solution Architect</strong></span>
-              <span>AWS</span>
-            </div>
-          </li>
-          <li>
-            <div>
-              <span>2022</span>
-            </div>
-            <div>
-              <span><strong>Cloud Practitioner</strong></span>
-              <span>AWS</span>
-            </div>
-          </li>
-          <li>
-            <div>
-              <span>2022</span>
-            </div>
-            <div>
-              <span><strong>Programación Web Fullstack</strong></span>
-              <span>DigitalHouse</span>
-            </div>
-          </li>
-          <li>
-            <div>
-              <span>2021</span>
-            </div>
-            <div>
-              <span
-                ><strong
-                  >Desarrollo frontend con HTML, CSS y JavaScript</strong
-                ></span
-              >
-              <span>Pilartecno La Rioja</span>
-            </div>
-          </li>
-          <li>
-            <div>
-              <span>2021</span>
-            </div>
-            <div>
-              <span><strong>Desarrollo frontend con React</strong></span>
-              <span>Pilartecno La Rioja</span>
-            </div>
-          </li>
-          <li>
-            <div>
-              <span>2021</span>
-            </div>
-            <div>
-              <span><strong>MERN Stack</strong></span>
-              <span>Pilartecno La Rioja</span>
-            </div>
-          </li>
-          <li>
-            <div>
-              <span>2021</span>
-            </div>
-            <div>
-              <span><strong>Python Intermedio</strong></span>
-              <span>UnLaR</span>
-            </div>
-          </li>
-          <li>
-            <div>
-              <span>2020</span>
-            </div>
-            <div>
-              <span><strong>Pyton Básico</strong></span>
-              <span>UnLaR</span>
-            </div>
-          </li>
-        </ul>
-      </section>
+      <div>
+        <h1>Curriculum</h1>
+      </div>
+      <div>
+        <section name="tecnologias">
+          <h2>TECNOLOGÍAS</h2>
+          <ul>
+            <li><i>IMG</i> AWS</li>
+            <li><i>IMG</i> Serverless Framework</li>
+            <li><i>IMG</i> NodeJs</li>
+            <li><i>IMG</i> TypeScript</li>
+            <li><i>IMG</i> MongoDB</li>
+            <li><i>IMG</i> Express</li>
+            <li><i>IMG</i> React</li>
+            <li><i>IMG</i> Tailwind</li>
+            <li><i>IMG</i> Gitlab</li>
+            <li><i>IMG</i> Datadog</li>
+            <li><i>IMG</i> Jira</li>
+          </ul>
+        </section>
+        <section name="experiencia">
+          <h2>EXPERIENCIA</h2>
+          <ul>
+            <li>
+              <div>
+                <span>2021</span>
+                <span>al</span>
+                <span>2022</span>
+              </div>
+              <div>
+                <span><strong>Incluit</strong></span>
+                <span>Backend Developer Ssr</span>
+              </div>
+            </li>
+            <li>
+              <div>
+                <span>2022</span>
+                <span>al</span>
+                <span>Actualidad</span>
+              </div>
+              <div>
+                <span><strong>Naranja X</strong></span>
+                <span>Software Engineer Sr</span>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <section name="educacion">
+          <h2>EDUCACIÓN</h2>
+          <ul>
+            <li>
+              <div>
+                <span>2019</span>
+                <span>al</span>
+                <span>Actualidad</span>
+              </div>
+              <div>
+                <span><strong>Ingeniería en Sistemas</strong></span>
+                <span>UnLaR</span>
+              </div>
+            </li>
+            <li>
+              <div>
+                <span>2011</span>
+              </div>
+              <div>
+                <span><strong>Secundario</strong></span>
+                <span>Colegio N°1 Joaquin Victor Gonzalez</span>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <section name="certificaciones">
+          <h2>CERTIFICACIONES</h2>
+          <ul>
+            <li>
+              <div>
+                <span>2024</span>
+              </div>
+              <div>
+                <span><strong>Solution Architect</strong></span>
+                <span>AWS</span>
+              </div>
+            </li>
+            <li>
+              <div>
+                <span>2022</span>
+              </div>
+              <div>
+                <span><strong>Cloud Practitioner</strong></span>
+                <span>AWS</span>
+              </div>
+            </li>
+            <li>
+              <div>
+                <span>2022</span>
+              </div>
+              <div>
+                <span><strong>Programación Web Fullstack</strong></span>
+                <span>DigitalHouse</span>
+              </div>
+            </li>
+            <li>
+              <div>
+                <span>2021</span>
+              </div>
+              <div>
+                <span
+                  ><strong
+                    >Desarrollo frontend con HTML, CSS y JavaScript</strong
+                  ></span
+                >
+                <span>Pilartecno La Rioja</span>
+              </div>
+            </li>
+            <li>
+              <div>
+                <span>2021</span>
+              </div>
+              <div>
+                <span><strong>Desarrollo frontend con React</strong></span>
+                <span>Pilartecno La Rioja</span>
+              </div>
+            </li>
+            <li>
+              <div>
+                <span>2021</span>
+              </div>
+              <div>
+                <span><strong>MERN Stack</strong></span>
+                <span>Pilartecno La Rioja</span>
+              </div>
+            </li>
+            <li>
+              <div>
+                <span>2021</span>
+              </div>
+              <div>
+                <span><strong>Python Intermedio</strong></span>
+                <span>UnLaR</span>
+              </div>
+            </li>
+            <li>
+              <div>
+                <span>2020</span>
+              </div>
+              <div>
+                <span><strong>Pyton Básico</strong></span>
+                <span>UnLaR</span>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </div>
     </main>
-    <footer>
-      <div>
-        <a href="#">
-          <strong>Martín</strong>
-          dos Santos
-        </a>
+    <footer class="footer md:footer roboto-mono-100">
+      <div class="flex w-full justify-between">
+        <div class="flex flex-col pr-2 w-1/2">
+          <a href="#">
+            <strong>Martín</strong>
+            dos Santos
+          </a>
+          <span class="md:hidden"><strong>mds.designss@gmail.com</strong></span>
+        </div>
+        <div class="w-1/2 md:w-full flex md:flex-col justify-start h-full">
+          <ul class="flex flex-col px-4 gap-2 border-l-2 md:gap-8 md:pl-8">
+            <li><a href="./quienSoy.html">¿Quién Soy?</a></li>
+            <li><a href="./curriculum.html">Curriculum</a></li>
+            <li><a href="./portfolio.html">Portafolios</a></li>
+            <li><a href="./contact.html">Contacto</a></li>
+          </ul>
+          <span class="hidden md:block"><strong>@2024</strong></span>
+        </div>
       </div>
-      <div>
-        <ul class="flex">
-          <li><a href="./quienSoy.html">¿Quién Soy?</a></li>
-          <li><a href="./curriculum.html">Curriculum</a></li>
-          <li><a href="./portfolio.html">Portafolios</a></li>
-          <li><a href="./contact.html">Contacto</a></li>
-        </ul>
-        <span>@ 2024</span>
-      </div>
-      <div>
-        <ul>
-          <li><a href="https://github.com/tinchods93">Github</a></li>
+      <div class="flex md:flex-col">
+        <ul class="flex w-full justify-center gap-8">
           <li>
-            <a href="https://www.instagram.com/martin.dossantoss/">Instagram</a>
+            <a href="https://github.com/tinchods93"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/martin.dossantoss/"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
           </li>
           <li>
             <a href="https://www.linkedin.com/in/martin-e-dos-santos/"
-              >Linkedin</a
-            >
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
           </li>
         </ul>
-        <span><strong>mds.designss@gmail.com</strong></span>
+        <span class="hidden md:block"
+          ><strong>mds.designss@gmail.com</strong></span
+        >
       </div>
     </footer>
+    <script
+      src="https://kit.fontawesome.com/b9fbd9565a.js"
+      crossorigin="anonymous"></script>
   </body>
 </html>

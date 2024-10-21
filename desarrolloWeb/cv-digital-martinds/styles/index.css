@@ -1,0 +1,87 @@
+#img-perfil {
+  border-radius: 50%;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  max-width: 400px;
+  max-height: 400px;
+  min-width: 200px;
+  min-height: 200px;
+}
+
+#container-img-perfil {
+  display: flex;
+  width: 100%;
+}
+
+#frases-experiencia {
+  color: var(--terciary-color);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+#frases-experiencia p {
+  quotes: '“' '”' '‘' '’';
+}
+
+#frases-experiencia article {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  text-align: justify;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--primary-color);
+}
+
+#frases-experiencia #experiencia {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: fit-content;
+  max-height: 80px;
+  background-color: transparent;
+  margin-top: 4em;
+}
+
+#frases-experiencia-experiencia {
+  width: 10em;
+  display: flex;
+  flex-direction: row;
+}
+
+@media screen and (min-width: 768px) {
+  #img-perfil {
+    padding: 0px;
+    max-width: 480px;
+    max-height: 480px;
+  }
+
+  #container-img-perfil {
+    width: 50%;
+    flex-direction: column;
+  }
+
+  #frases-experiencia {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  #frases-experiencia article {
+    max-height: 200px;
+    max-width: 700px;
+  }
+
+  #frases-experiencia #experiencia {
+    margin-top: 10em;
+  }
+}

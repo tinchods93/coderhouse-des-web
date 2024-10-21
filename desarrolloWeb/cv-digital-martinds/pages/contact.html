@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/commonStyles.css" />
+    <link rel="stylesheet" href="../styles/footer.css" />
+    <link rel="stylesheet" href="../styles/navbar.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet" />
+    <title>Contacto</title>
+  </head>
+  <body>
+    <header>
+      <nav class="flex md:hidden" id="nav-mobile">
+        <div>
+          <button>
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </nav>
+      <nav class="roboto-mono-100 hidden md:flex" id="nav-desktop">
+        <div class="px-8 h-full items-center flex">
+          <a href="./index.html">
+            <strong>Martín</strong>
+            dos Santos
+          </a>
+        </div>
+        <div>
+          <ul class="flex h-full gap-12 px-8">
+            <li>
+              <a href="./quienSoy.html" class="color-quaternary">¿Quién Soy?</a>
+            </li>
+            <li><a href="./curriculum.html">Curriculum</a></li>
+            <li><a href="./portfolio.html">Portafolios</a></li>
+            <li>
+              <a href="./contact.html" class="color-quaternary">Contacto</a>
+            </li>
+            <li>
+              <a href="https://github.com/tinchods93"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/martin.dossantoss/"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div>
+        <h1>¡Contactame!</h1>
+      </div>
+      <div>
+        <section name="enviar-email">
+          <h2>TECNOLOGÍAS</h2>
+          <form>
+            <div>
+              <label for="nombre">Nombre</label>
+              <input type="text" id="nombre" />
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input type="email" id="email" />
+            </div>
+            <div>
+              <label for="asunto">Asunto</label>
+              <input type="text" id="asunto" />
+            </div>
+            <div>
+              <label for="mensaje">Mensaje</label>
+              <textarea id="mensaje"></textarea>
+            </div>
+            <button type="submit">Enviar</button>
+          </form>
+        </section>
+        <section name="contactos">
+          <div>
+            <ul>
+              <li>
+                <div>
+                  <span>WHATSAPP</span>
+                </div>
+                <div>
+                  <span>+54 9 3804 419488</span>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <span>CORREO</span>
+                </div>
+                <div>
+                  <span>riojanomartin@gmail.com</span>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <span>INSTAGRAM</span>
+                </div>
+                <div>
+                  <span>@martin.dossantoss</span>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <span>linkedin</span>
+                </div>
+                <div>
+                  <span>martin-e-dos-santos</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <a
+              href="https://www.google.com/maps/place/29%C2%B024'54.0%22S+66%C2%B051'35.9%22W/@-29.4150026,-66.8702677,3650m/data=!3m2!1e3!4b1!4m4!3m3!8m2!3d-29.415003!4d-66.859968?entry=ttu&g_ep=EgoyMDI0MTAxNi4wIKXMDSoASAFQAw%3D%3D">
+              <img src="../assets/maps.jpeg" alt="maps" />
+            </a>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="footer md:footer roboto-mono-100">
+      <div class="flex w-full justify-between">
+        <div class="flex flex-col pr-2 w-1/2">
+          <a href="#">
+            <strong>Martín</strong>
+            dos Santos
+          </a>
+          <span class="md:hidden"><strong>mds.designss@gmail.com</strong></span>
+        </div>
+        <div class="w-1/2 md:w-full flex md:flex-col justify-start h-full">
+          <ul class="flex flex-col px-4 gap-2 border-l-2 md:gap-8 md:pl-8">
+            <li><a href="./quienSoy.html">¿Quién Soy?</a></li>
+            <li><a href="./curriculum.html">Curriculum</a></li>
+            <li><a href="./portfolio.html">Portafolios</a></li>
+            <li><a href="./contact.html">Contacto</a></li>
+          </ul>
+          <span class="hidden md:block"><strong>@2024</strong></span>
+        </div>
+      </div>
+      <div class="flex md:flex-col">
+        <ul class="flex w-full justify-center gap-8">
+          <li>
+            <a href="https://github.com/tinchods93"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/martin.dossantoss/"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/martin-e-dos-santos/"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+          </li>
+        </ul>
+        <span class="hidden md:block"
+          ><strong>mds.designss@gmail.com</strong></span
+        >
+      </div>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/b9fbd9565a.js"
+      crossorigin="anonymous"></script>
+  </body>
+</html>
