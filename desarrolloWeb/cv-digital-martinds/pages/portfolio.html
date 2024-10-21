@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="../styles/commonStyles.css" />
     <link rel="stylesheet" href="../styles/footer.css" />
     <link rel="stylesheet" href="../styles/navbar.css" />
+    <link rel="stylesheet" href="../styles/portfolio.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -39,7 +40,7 @@
             <li><a href="./curriculum.html">Curriculum</a></li>
             <li>
               <a href="./portfolio.html" class="color-quaternary"
-                >Portafolios</a
+                >< Portafolios ></a
               >
             </li>
             <li><a href="./contact.html">Contacto</a></li>
@@ -57,188 +58,217 @@
         </div>
       </nav>
     </header>
-    <main>
-      <section name="ultimos-trabajos">
-        <div>
-          <h1>Últimos Trabajos</h1>
-          <div class="card">
-            <div class="card-header">
-              <span>Proyecto 1</span>
+    <main class="px-4 md:px-12">
+      <div class="md:hidden mb-2" id="titulo-page">
+        <h4>Últimos trabajos</h4>
+      </div>
+      <div class="hidden md:block mb-2" id="titulo-page">
+        <h2>Últimos trabajos</h2>
+      </div>
+      <div class="flex flex-col">
+        <section
+          name="ultimos-trabajos"
+          class="hidden md:flex"
+          id="ultimos-trabajos">
+          <div class="flex flex-col w-full">
+            <div class="card">
+              <div class="card-header">
+                <span>Proyecto 1</span>
+              </div>
+              <div class="card-body">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
+                  inventore rerum id sit iure natus quo voluptas porro quisquam
+                  atque quasi neque quaerat recusandae ducimus, veritatis illum
+                  tempore tenetur, suscipit facilis deleniti sed, fugiat
+                  voluptates dolorum temporibus! Doloribus voluptas tenetur
+                  voluptate distinctio ratione dolorum totam quam a pariatur
+                  libero? Quasi culpa dolores dolore ex? Neque sapiente debitis
+                  ea rerum ducimus impedit dolor vitae recusandae nam
+                  perferendis explicabo dolores cumque, reprehenderit quibusdam.
+                  Quibusdam saepe quis quasi maiores ipsam dolores aspernatur
+                  quidem cupiditate eligendi, optio, hic aliquam possimus
+                  aperiam quod autem, explicabo ea adipisci asperiores ipsa odit
+                  beatae temporibus id ipsum in.
+                </p>
+              </div>
+              <div class="card-footer">
+                <span>auth0</span>
+                <span>nextjs</span>
+              </div>
             </div>
-            <div class="card-body">
+            <div class="hidden md:flex p-12 flex-col h-full justify-center">
+              <a href="#todos-los-proyectos"> TODOS LOS PROYECTOS</a>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae,
-                iste quis illo dolorem asperiores fuga ullam error dolore
-                aliquid quo omnis nostrum, quidem adipisci quos saepe
-                voluptatibus labore nesciunt quod.
+                * Algunos proyectos no pueden mostrarse por politicas de
+                contrato.
               </p>
             </div>
-            <div class="card-footer">
-              <span>aws</span>
-              <span>nodejs</span>
-              <span>typescript</span>
-              <span>serverless</span>
+          </div>
+          <div class="w-full">
+            <div class="card">
+              <div class="card-header">
+                <span>Proyecto 2</span>
+              </div>
+              <div class="card-body">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae,
+                  iste quis illo dolorem asperiores fuga ullam error dolore
+                  aliquid quo omnis nostrum, quidem adipisci quos saepe
+                  voluptatibus labore nesciunt quod.
+                </p>
+              </div>
+              <div class="card-footer">
+                <span>auth0</span>
+                <span>nextjs</span>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header">
+                <span>Proyecto 3</span>
+              </div>
+              <div class="card-body">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae,
+                  iste quis illo dolorem asperiores fuga ullam error dolore
+                  aliquid quo omnis nostrum, quidem adipisci quos saepe
+                  voluptatibus labore nesciunt quod.
+                </p>
+              </div>
+              <div class="card-footer">
+                <span>react</span>
+                <span>typescript</span>
+              </div>
             </div>
           </div>
-          <div>
-            <a href="#todos-los-proyectos">Todos los Proyectos</a>
+        </section>
+        <section
+          name="todos-los-proyectos"
+          id="todos-los-proyectos"
+          class="flex flex-col md:flex-row md:mt-12">
+          <div id="todos-los-proyectos-menu-container">
+            <span>Filtros</span>
+            <ul class="flex flex-wrap gap-2 md:flex-col">
+              <li><button>aws</button></li>
+              <li><button>nodejs</button></li>
+              <li><button>serverless</button></li>
+              <li><button>typescript</button></li>
+              <li><button>react</button></li>
+              <li><button>frontend</button></li>
+              <li><button>backend</button></li>
+              <li>
+                <button id="todos-los-proyectos-menu-filtro-selected">
+                  todos
+                </button>
+              </li>
+            </ul>
           </div>
-        </div>
-        <div>
-          <div class="card">
-            <div class="card-header">
-              <span>Proyecto 2</span>
+          <div class="flex flex-col md:flex-row md:flex-wrap">
+            <div class="card">
+              <div class="card-header">
+                <span>Proyecto 3</span>
+              </div>
+              <div class="card-body">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae,
+                  iste quis illo dolorem asperiores fuga ullam error dolore
+                  aliquid quo omnis nostrum, quidem adipisci quos saepe
+                  voluptatibus labore nesciunt quod.
+                </p>
+              </div>
+              <div class="card-footer">
+                <span>react</span>
+                <span>typescript</span>
+              </div>
             </div>
-            <div class="card-body">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae,
-                iste quis illo dolorem asperiores fuga ullam error dolore
-                aliquid quo omnis nostrum, quidem adipisci quos saepe
-                voluptatibus labore nesciunt quod.
-              </p>
+            <div class="card">
+              <div class="card-header">
+                <span>Proyecto 3</span>
+              </div>
+              <div class="card-body">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae,
+                  iste quis illo dolorem asperiores fuga ullam error dolore
+                  aliquid quo omnis nostrum, quidem adipisci quos saepe
+                  voluptatibus labore nesciunt quod.
+                </p>
+              </div>
+              <div class="card-footer">
+                <span>react</span>
+                <span>typescript</span>
+              </div>
             </div>
-            <div class="card-footer">
-              <span>auth0</span>
-              <span>nextjs</span>
+            <div class="card">
+              <div class="card-header">
+                <span>Proyecto 3</span>
+              </div>
+              <div class="card-body">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae,
+                  iste quis illo dolorem asperiores fuga ullam error dolore
+                  aliquid quo omnis nostrum, quidem adipisci quos saepe
+                  voluptatibus labore nesciunt quod.
+                </p>
+              </div>
+              <div class="card-footer">
+                <span>react</span>
+                <span>typescript</span>
+              </div>
             </div>
-          </div>
-          <div class="card">
-            <div class="card-header">
-              <span>Proyecto 3</span>
+            <div class="card">
+              <div class="card-header">
+                <span>Proyecto 3</span>
+              </div>
+              <div class="card-body">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae,
+                  iste quis illo dolorem asperiores fuga ullam error dolore
+                  aliquid quo omnis nostrum, quidem adipisci quos saepe
+                  voluptatibus labore nesciunt quod.
+                </p>
+              </div>
+              <div class="card-footer">
+                <span>react</span>
+                <span>typescript</span>
+              </div>
             </div>
-            <div class="card-body">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae,
-                iste quis illo dolorem asperiores fuga ullam error dolore
-                aliquid quo omnis nostrum, quidem adipisci quos saepe
-                voluptatibus labore nesciunt quod.
-              </p>
+            <div class="card">
+              <div class="card-header">
+                <span>Proyecto 3</span>
+              </div>
+              <div class="card-body">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae,
+                  iste quis illo dolorem asperiores fuga ullam error dolore
+                  aliquid quo omnis nostrum, quidem adipisci quos saepe
+                  voluptatibus labore nesciunt quod.
+                </p>
+              </div>
+              <div class="card-footer">
+                <span>react</span>
+                <span>typescript</span>
+              </div>
             </div>
-            <div class="card-footer">
-              <span>react</span>
-              <span>typescript</span>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section name="todos-los-proyectos" id="todos-los-proyectos" class="flex">
-        <div>
-          <span>Filtros</span>
-          <ul>
-            <li><button>aws</button></li>
-            <li><button>nodejs</button></li>
-            <li><button>serverless</button></li>
-            <li><button>typescript</button></li>
-            <li><button>react</button></li>
-            <li><button>frontend</button></li>
-            <li><button>backend</button></li>
-          </ul>
-        </div>
-        <div>
-          <div class="card">
-            <div class="card-header">
-              <span>Proyecto 3</span>
-            </div>
-            <div class="card-body">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae,
-                iste quis illo dolorem asperiores fuga ullam error dolore
-                aliquid quo omnis nostrum, quidem adipisci quos saepe
-                voluptatibus labore nesciunt quod.
-              </p>
-            </div>
-            <div class="card-footer">
-              <span>react</span>
-              <span>typescript</span>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-header">
-              <span>Proyecto 3</span>
-            </div>
-            <div class="card-body">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae,
-                iste quis illo dolorem asperiores fuga ullam error dolore
-                aliquid quo omnis nostrum, quidem adipisci quos saepe
-                voluptatibus labore nesciunt quod.
-              </p>
-            </div>
-            <div class="card-footer">
-              <span>react</span>
-              <span>typescript</span>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-header">
-              <span>Proyecto 3</span>
-            </div>
-            <div class="card-body">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae,
-                iste quis illo dolorem asperiores fuga ullam error dolore
-                aliquid quo omnis nostrum, quidem adipisci quos saepe
-                voluptatibus labore nesciunt quod.
-              </p>
-            </div>
-            <div class="card-footer">
-              <span>react</span>
-              <span>typescript</span>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-header">
-              <span>Proyecto 3</span>
-            </div>
-            <div class="card-body">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae,
-                iste quis illo dolorem asperiores fuga ullam error dolore
-                aliquid quo omnis nostrum, quidem adipisci quos saepe
-                voluptatibus labore nesciunt quod.
-              </p>
-            </div>
-            <div class="card-footer">
-              <span>react</span>
-              <span>typescript</span>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-header">
-              <span>Proyecto 3</span>
-            </div>
-            <div class="card-body">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae,
-                iste quis illo dolorem asperiores fuga ullam error dolore
-                aliquid quo omnis nostrum, quidem adipisci quos saepe
-                voluptatibus labore nesciunt quod.
-              </p>
-            </div>
-            <div class="card-footer">
-              <span>react</span>
-              <span>typescript</span>
+            <div class="card">
+              <div class="card-header">
+                <span>Proyecto 3</span>
+              </div>
+              <div class="card-body">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae,
+                  iste quis illo dolorem asperiores fuga ullam error dolore
+                  aliquid quo omnis nostrum, quidem adipisci quos saepe
+                  voluptatibus labore nesciunt quod.
+                </p>
+              </div>
+              <div class="card-footer">
+                <span>react</span>
+                <span>typescript</span>
+              </div>
             </div>
           </div>
-          <div class="card">
-            <div class="card-header">
-              <span>Proyecto 3</span>
-            </div>
-            <div class="card-body">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae,
-                iste quis illo dolorem asperiores fuga ullam error dolore
-                aliquid quo omnis nostrum, quidem adipisci quos saepe
-                voluptatibus labore nesciunt quod.
-              </p>
-            </div>
-            <div class="card-footer">
-              <span>react</span>
-              <span>typescript</span>
-            </div>
-          </div>
-        </div>
-      </section>
+        </section>
+      </div>
     </main>
     <footer class="footer md:footer">
       <div class="flex w-full justify-between">

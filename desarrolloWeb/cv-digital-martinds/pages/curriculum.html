@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="../styles/commonStyles.css" />
     <link rel="stylesheet" href="../styles/footer.css" />
     <link rel="stylesheet" href="../styles/navbar.css" />
+    <link rel="stylesheet" href="../styles/curriculum.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -38,7 +39,7 @@
             </li>
             <li>
               <a href="./curriculum.html" class="color-quaternary"
-                >Curriculum</a
+                >< Curriculum ></a
               >
             </li>
             <li><a href="./portfolio.html">Portafolios</a></li>
@@ -57,48 +58,138 @@
         </div>
       </nav>
     </header>
-    <main>
-      <div>
-        <h1>Curriculum</h1>
+    <main class="px-4 md:px-12">
+      <div class="md:hidden mb-2" id="titulo-page">
+        <h4>Curriculum</h4>
       </div>
-      <div>
+      <div
+        class="flex flex-col-reverse md:flex-row gap-12"
+        id="curriculum-skills-container">
         <section name="tecnologias">
           <h2>TECNOLOGÍAS</h2>
           <ul>
-            <li><i>IMG</i> AWS</li>
-            <li><i>IMG</i> Serverless Framework</li>
-            <li><i>IMG</i> NodeJs</li>
-            <li><i>IMG</i> TypeScript</li>
-            <li><i>IMG</i> MongoDB</li>
-            <li><i>IMG</i> Express</li>
-            <li><i>IMG</i> React</li>
-            <li><i>IMG</i> Tailwind</li>
-            <li><i>IMG</i> Gitlab</li>
-            <li><i>IMG</i> Datadog</li>
-            <li><i>IMG</i> Jira</li>
+            <li>
+              <div id="curriculum-icon-container">
+                <i class="fab fa-aws"></i>
+              </div>
+              <div id="curriculum-descripcion">
+                <span><strong>AWS</strong></span>
+                <span>Sr</span>
+              </div>
+            </li>
+            <li>
+              <div id="curriculum-icon-container">
+                <i class="fas fa-server"></i>
+              </div>
+              <div id="curriculum-descripcion">
+                <span><strong>Serverless Framework</strong></span>
+                <span>Sr</span>
+              </div>
+            </li>
+            <li>
+              <div id="curriculum-icon-container">
+                <i class="fab fa-node-js"></i>
+              </div>
+              <div id="curriculum-descripcion">
+                <span><strong>NodeJs</strong></span>
+                <span>Sr</span>
+              </div>
+            </li>
+            <li>
+              <div id="curriculum-icon-container">
+                <i class="fas fa-code"></i>
+              </div>
+              <div id="curriculum-descripcion">
+                <span><strong>TypeScript</strong></span>
+                <span>Ssr</span>
+              </div>
+            </li>
+            <li>
+              <div id="curriculum-icon-container">
+                <i class="fas fa-database"></i>
+              </div>
+              <div id="curriculum-descripcion">
+                <span><strong>MongoDB</strong></span>
+                <span>Sr</span>
+              </div>
+            </li>
+            <li>
+              <div id="curriculum-icon-container">
+                <i class="fas fa-server"></i>
+              </div>
+              <div id="curriculum-descripcion">
+                <span><strong>Express</strong></span>
+                <span>Sr</span>
+              </div>
+            </li>
+            <li>
+              <div id="curriculum-icon-container">
+                <i class="fab fa-react"></i>
+              </div>
+              <div id="curriculum-descripcion">
+                <span><strong>React</strong></span>
+                <span>Jr</span>
+              </div>
+            </li>
+            <li>
+              <div id="curriculum-icon-container">
+                <i class="fab fa-css3-alt"></i>
+              </div>
+              <div id="curriculum-descripcion">
+                <span><strong>Tailwind</strong></span>
+                <span>Jr</span>
+              </div>
+            </li>
+            <li>
+              <div id="curriculum-icon-container">
+                <i class="fab fa-gitlab"></i>
+              </div>
+              <div id="curriculum-descripcion">
+                <span><strong>Gitlab</strong></span>
+                <span>Sr</span>
+              </div>
+            </li>
+            <li>
+              <div id="curriculum-icon-container">
+                <i class="fas fa-dog"></i>
+              </div>
+              <div id="curriculum-descripcion">
+                <span><strong>Datadog</strong></span>
+                <span>Jr</span>
+              </div>
+            </li>
+            <li>
+              <div id="curriculum-icon-container">
+                <i class="fab fa-jira"></i>
+              </div>
+              <div id="curriculum-descripcion">
+                <span><strong>Jira</strong></span>
+                <span>Sr</span>
+              </div>
+            </li>
           </ul>
         </section>
         <section name="experiencia">
           <h2>EXPERIENCIA</h2>
           <ul>
             <li>
-              <div>
+              <div id="curriculum-date-container">
                 <span>2021</span>
                 <span>al</span>
                 <span>2022</span>
               </div>
-              <div>
+              <div id="curriculum-descripcion">
                 <span><strong>Incluit</strong></span>
                 <span>Backend Developer Ssr</span>
               </div>
             </li>
             <li>
-              <div>
+              <div id="curriculum-date-container">
                 <span>2022</span>
                 <span>al</span>
-                <span>Actualidad</span>
+                <span>2024</span>
               </div>
-              <div>
+              <div id="curriculum-descripcion">
                 <span><strong>Naranja X</strong></span>
                 <span>Software Engineer Sr</span>
               </div>
@@ -109,21 +200,21 @@
           <h2>EDUCACIÓN</h2>
           <ul>
             <li>
-              <div>
+              <div id="curriculum-date-container">
                 <span>2019</span>
                 <span>al</span>
-                <span>Actualidad</span>
+                <span>2024</span>
               </div>
-              <div>
+              <div id="curriculum-descripcion">
                 <span><strong>Ingeniería en Sistemas</strong></span>
                 <span>UnLaR</span>
               </div>
             </li>
             <li>
-              <div>
+              <div id="curriculum-date-container">
                 <span>2011</span>
               </div>
-              <div>
+              <div id="curriculum-descripcion">
                 <span><strong>Secundario</strong></span>
                 <span>Colegio N°1 Joaquin Victor Gonzalez</span>
               </div>
@@ -134,37 +225,37 @@
           <h2>CERTIFICACIONES</h2>
           <ul>
             <li>
-              <div>
+              <div id="curriculum-date-container">
                 <span>2024</span>
               </div>
-              <div>
+              <div id="curriculum-descripcion">
                 <span><strong>Solution Architect</strong></span>
                 <span>AWS</span>
               </div>
             </li>
             <li>
-              <div>
+              <div id="curriculum-date-container">
                 <span>2022</span>
               </div>
-              <div>
+              <div id="curriculum-descripcion">
                 <span><strong>Cloud Practitioner</strong></span>
                 <span>AWS</span>
               </div>
             </li>
             <li>
-              <div>
+              <div id="curriculum-date-container">
                 <span>2022</span>
               </div>
-              <div>
+              <div id="curriculum-descripcion">
                 <span><strong>Programación Web Fullstack</strong></span>
                 <span>DigitalHouse</span>
               </div>
             </li>
             <li>
-              <div>
+              <div id="curriculum-date-container">
                 <span>2021</span>
               </div>
-              <div>
+              <div id="curriculum-descripcion">
                 <span
                   ><strong
                     >Desarrollo frontend con HTML, CSS y JavaScript</strong
@@ -174,37 +265,37 @@
               </div>
             </li>
             <li>
-              <div>
+              <div id="curriculum-date-container">
                 <span>2021</span>
               </div>
-              <div>
+              <div id="curriculum-descripcion">
                 <span><strong>Desarrollo frontend con React</strong></span>
                 <span>Pilartecno La Rioja</span>
               </div>
             </li>
             <li>
-              <div>
+              <div id="curriculum-date-container">
                 <span>2021</span>
               </div>
-              <div>
+              <div id="curriculum-descripcion">
                 <span><strong>MERN Stack</strong></span>
                 <span>Pilartecno La Rioja</span>
               </div>
             </li>
             <li>
-              <div>
+              <div id="curriculum-date-container">
                 <span>2021</span>
               </div>
-              <div>
+              <div id="curriculum-descripcion">
                 <span><strong>Python Intermedio</strong></span>
                 <span>UnLaR</span>
               </div>
             </li>
             <li>
-              <div>
+              <div id="curriculum-date-container">
                 <span>2020</span>
               </div>
-              <div>
+              <div id="curriculum-descripcion">
                 <span><strong>Pyton Básico</strong></span>
                 <span>UnLaR</span>
               </div>
