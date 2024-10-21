@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="../styles/commonStyles.css" />
     <link rel="stylesheet" href="../styles/footer.css" />
     <link rel="stylesheet" href="../styles/navbar.css" />
+    <link rel="stylesheet" href="../styles/contact.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -55,39 +56,41 @@
         </div>
       </nav>
     </header>
-    <main>
-      <div>
-        <h1>¡Contactame!</h1>
+    <main class="px-4 md:px-12">
+      <div class="md:hidden" id="titulo-page">
+        <h4>Contacto</h4>
       </div>
-      <div>
-        <section name="enviar-email">
-          <h2>TECNOLOGÍAS</h2>
+      <div
+        class="flex flex-col-reverse md:flex-row gap-8"
+        id="contactame-container">
+        <section name="enviar-email" id="contactame-form-container">
           <form>
-            <div>
+            <h3>¡Contactame!</h3>
+            <div class="form-input">
               <label for="nombre">Nombre</label>
               <input type="text" id="nombre" />
             </div>
-            <div>
+            <div class="form-input">
               <label for="email">Email</label>
               <input type="email" id="email" />
             </div>
-            <div>
+            <div class="form-input">
               <label for="asunto">Asunto</label>
               <input type="text" id="asunto" />
             </div>
-            <div>
+            <div class="form-input">
               <label for="mensaje">Mensaje</label>
               <textarea id="mensaje"></textarea>
             </div>
-            <button type="submit">Enviar</button>
+            <button type="submit" class="button-primary">Enviar</button>
           </form>
         </section>
-        <section name="contactos">
-          <div>
+        <section name="contactos" id="contactame-datos-container">
+          <div id="contactame-redes-container">
             <ul>
               <li>
                 <div>
-                  <span>WHATSAPP</span>
+                  <i class="fab fa-whatsapp"></i>
                 </div>
                 <div>
                   <span>+54 9 3804 419488</span>
@@ -95,7 +98,7 @@
               </li>
               <li>
                 <div>
-                  <span>CORREO</span>
+                  <i class="fas fa-envelope"></i>
                 </div>
                 <div>
                   <span>riojanomartin@gmail.com</span>
@@ -103,7 +106,9 @@
               </li>
               <li>
                 <div>
-                  <span>INSTAGRAM</span>
+                  <a href="https://www.instagram.com/martin.dossantoss/"
+                    ><i class="fa-brands fa-instagram"></i
+                  ></a>
                 </div>
                 <div>
                   <span>@martin.dossantoss</span>
@@ -111,7 +116,9 @@
               </li>
               <li>
                 <div>
-                  <span>linkedin</span>
+                  <a href="https://www.linkedin.com/in/martin-e-dos-santos/"
+                    ><i class="fa-brands fa-linkedin"></i
+                  ></a>
                 </div>
                 <div>
                   <span>martin-e-dos-santos</span>
@@ -119,7 +126,7 @@
               </li>
             </ul>
           </div>
-          <div>
+          <div id="contactame-mapa-container">
             <a
               href="https://www.google.com/maps/place/29%C2%B024'54.0%22S+66%C2%B051'35.9%22W/@-29.4150026,-66.8702677,3650m/data=!3m2!1e3!4b1!4m4!3m3!8m2!3d-29.415003!4d-66.859968?entry=ttu&g_ep=EgoyMDI0MTAxNi4wIKXMDSoASAFQAw%3D%3D">
               <img src="../assets/maps.jpeg" alt="maps" />

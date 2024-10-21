@@ -6,6 +6,7 @@
 
 :root {
   --primary-color: rgb(37, 37, 42);
+  --primary-b-color: rgb(73, 73, 78);
   --secondary-color: #a4d88b;
   --terciary-color: #bdd0d9;
   --quaternary-color: #86d9ff;
@@ -26,6 +27,7 @@ body {
   line-height: var(--line-height);
   width: 100%;
   min-height: 100vh;
+  min-width: 400px;
   color: var(--terciary-color);
   display: flex;
   flex-direction: column;
@@ -75,12 +77,16 @@ main a {
   font-weight: 600;
 }
 
-/* main a:hover {
-  color: var(--secondary-color);
-  text-decoration: underline solid 0.1em;
-  text-transform: uppercase;
-  text-underline-offset: 0.3em;
-} */
+.button-primary {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  font-size: medium;
+  padding: 1.5em 1em;
+  border: none;
+  border-radius: 0.2em;
+  cursor: pointer;
+  font-weight: 600;
+}
 
 ul {
   list-style: none;
