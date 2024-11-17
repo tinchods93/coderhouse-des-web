@@ -9,9 +9,6 @@
     <meta
       name="keywords"
       content="Martín dos Santos, Portafolio, Proyectos, Desarrollo de Software, React, Next.js, Node.js, Argentina" />
-    <link rel="stylesheet" href="../styles/commonStyles.css" />
-    <link rel="stylesheet" href="../styles/footer.css" />
-    <link rel="stylesheet" href="../styles/navbar.css" />
     <link rel="stylesheet" href="../styles/index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,72 +17,75 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
       rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous" />
     <script
       src="https://kit.fontawesome.com/b9fbd9565a.js"
       crossorigin="anonymous"></script>
     <title>Martín dos Santos - Portafolio de Proyectos</title>
   </head>
-  <body>
+  <body class="body">
     <header>
-      <nav class="flex md-hidden" id="nav-mobile">
-        <div>
-          <button>
-            <i class="fas fa-bars"></i>
-          </button>
-        </div>
-      </nav>
-      <nav class="hidden md-flex" id="nav-desktop">
-        <div class="px-8 h-full items-center flex">
+      <div class="d-md-none" id="nav-mobile">
+        <button>
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+      <nav class="d-none d-md-flex" id="nav-desktop">
+        <div class="d-flex container-fluid align-items-center">
           <a href="../index.html">
-            <strong>Martín</strong>
-            dos Santos
+            <p>
+              <strong>Martín</strong>
+              dos Santos
+            </p>
           </a>
         </div>
-        <div>
-          <ul class="flex h-full gap-12 px-8">
-            <li>
-              <a href="./quienSoy.html">¿Quién Soy?</a>
-            </li>
-            <li><a href="./curriculum.html">Curriculum</a></li>
-            <li>
-              <a href="./portfolio.html" class="color-quaternary"
-                >< Portafolios ></a
-              >
-            </li>
-            <li><a href="./contact.html">Contacto</a></li>
-            <li>
-              <a href="https://github.com/tinchods93" target="_blank"
-                ><i class="fa-brands fa-github"></i
-              ></a>
-            </li>
-            <li>
-              <a
-                href="https://www.instagram.com/martin.dossantoss/"
-                target="_blank"
-                ><i class="fa-brands fa-instagram"></i
-              ></a>
-            </li>
-          </ul>
-        </div>
+        <ul class="d-flex container-fluid gap-5 mr-4 justify-content-end">
+          <li><a href="./quienSoy.html">¿Quién Soy?</a></li>
+          <li>
+            <a href="./curriculum.html">Curriculum</a>
+          </li>
+          <li>
+            <a href="./portfolio.html" class="color-quaternary"
+              >< Portafolios ></a
+            >
+          </li>
+          <li>
+            <a href="./contact.html">Contacto</a>
+          </li>
+          <li>
+            <a href="https://github.com/tinchods93" target="_blank"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/martin.dossantoss/"
+              target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </li>
+        </ul>
       </nav>
-      <h1 class="hidden">Portfolio - Proyectos</h1>
-    </header>
-    <main class="px-4 md-px-12">
-      <div class="md-hidden mb-2" id="titulo-page">
-        <h1>Últimos trabajos</h1>
+      <div class="d-md-none my-5 mx-2">
+        <h1>Portfolio - Últimos Trabajos</h1>
       </div>
-      <div class="hidden md-block mb-2" id="titulo-page">
+    </header>
+    <main class="container-fluid px-md-4">
+      <div class="d-none d-md-block mb-2">
         <h2>Últimos trabajos</h2>
       </div>
-      <div class="flex flex-col">
+      <div class="d-flex flex-column">
         <section
           name="ultimos-trabajos"
-          class="hidden md-flex"
-          id="ultimos-trabajos">
-          <div class="flex flex-col w-full">
+          class="d-flex flex-column flex-md-row ultimos-trabajos">
+          <div class="d-flex flex-column container-fluid">
             <div class="card">
               <div class="card-header">
-                <span>Proyecto 1</span>
+                <h4>Proyecto 1</h4>
               </div>
               <div class="card-body">
                 <p>
@@ -105,22 +105,26 @@
                 </p>
               </div>
               <div class="card-footer">
+                <!-- se justifica el uso de span porque cada uno indica uno tiene un estilo aplicado y no es simple texto -->
                 <span>auth0</span>
                 <span>nextjs</span>
               </div>
             </div>
-            <div class="hidden md-flex p-12 flex-col h-full justify-center">
-              <a href="#todos-los-proyectos"> TODOS LOS PROYECTOS</a>
+            <div
+              class="d-none d-md-flex p-12 flex-column justify-content-center">
+              <a href="#todos-los-proyectos">
+                <strong>TODOS LOS PROYECTOS</strong></a
+              >
               <p>
                 * Algunos proyectos no pueden mostrarse por politicas de
                 contrato.
               </p>
             </div>
           </div>
-          <div class="w-full">
+          <div class="container-fluid">
             <div class="card">
               <div class="card-header">
-                <span>Proyecto 2</span>
+                <h4>Proyecto 2</h4>
               </div>
               <div class="card-body">
                 <p>
@@ -137,7 +141,7 @@
             </div>
             <div class="card">
               <div class="card-header">
-                <span>Proyecto 3</span>
+                <h4>Proyecto 3</h4>
               </div>
               <div class="card-body">
                 <p>
@@ -157,10 +161,10 @@
         <section
           name="todos-los-proyectos"
           id="todos-los-proyectos"
-          class="flex flex-col md-flex-row md-mt-12">
+          class="d-flex flex-column flex-md-row">
           <div id="todos-los-proyectos-menu-container">
-            <span>Filtros</span>
-            <ul class="flex flex-wrap gap-2 md-flex-col">
+            <h3>Filtros</h3>
+            <ul class="d-flex flex-wrap gap-2 flex-md-column">
               <li><button>aws</button></li>
               <li><button>nodejs</button></li>
               <li><button>serverless</button></li>
@@ -175,10 +179,11 @@
               </li>
             </ul>
           </div>
-          <div class="flex flex-col md-flex-row md-flex-wrap">
+          <div
+            class="d-flex flex-column flex-md-row flex-md-wrap container-fluid justify-content-between">
             <div class="card">
               <div class="card-header">
-                <span>Proyecto 3</span>
+                <h4>Proyecto 3</h4>
               </div>
               <div class="card-body">
                 <p>
@@ -195,7 +200,7 @@
             </div>
             <div class="card">
               <div class="card-header">
-                <span>Proyecto 3</span>
+                <h4>Proyecto 3</h4>
               </div>
               <div class="card-body">
                 <p>
@@ -212,7 +217,7 @@
             </div>
             <div class="card">
               <div class="card-header">
-                <span>Proyecto 3</span>
+                <h4>Proyecto 3</h4>
               </div>
               <div class="card-body">
                 <p>
@@ -229,7 +234,7 @@
             </div>
             <div class="card">
               <div class="card-header">
-                <span>Proyecto 3</span>
+                <h4>Proyecto 3</h4>
               </div>
               <div class="card-body">
                 <p>
@@ -246,7 +251,7 @@
             </div>
             <div class="card">
               <div class="card-header">
-                <span>Proyecto 3</span>
+                <h4>Proyecto 3</h4>
               </div>
               <div class="card-body">
                 <p>
@@ -263,7 +268,7 @@
             </div>
             <div class="card">
               <div class="card-header">
-                <span>Proyecto 3</span>
+                <h4>Proyecto 3</h4>
               </div>
               <div class="card-body">
                 <p>
@@ -282,29 +287,43 @@
         </section>
       </div>
     </main>
-    <footer class="footer md-footer">
-      <div class="flex w-full justify-between">
-        <div class="flex flex-col pr-2 w-1-2">
-          <a href="../index.html">
+    <footer class="footer d-flex flex-column flex-md-row">
+      <div
+        class="d-flex container-fluid justify-content-between align-items-center">
+        <div class="d-flex flex-column pr-2 container-fluid gap-2">
+          <a href="#">
             <strong>Martín</strong>
             dos Santos
           </a>
-          <a href="mailto:mds.designss@gmail.com" class="md-hidden"
+          <a href="mailto:mds.designss@gmail.com" class="d-md-none"
             ><strong>mds.designss@gmail.com</strong></a
           >
         </div>
-        <div class="w-1-2 md-w-full flex md-flex-col justify-start h-full">
-          <ul class="flex flex-col px-4 gap-2 border-l-2 md-gap-8 md-pl-8">
-            <li><a href="./quienSoy.html">¿Quién Soy?</a></li>
-            <li><a href="./curriculum.html">Curriculum</a></li>
-            <li><a href="./portfolio.html">Portafolios</a></li>
-            <li><a href="./contact.html">Contacto</a></li>
+        <nav
+          class="container-fluid d-flex flex-md-column justify-content-md-start justify-content-center border-l-2">
+          <ul
+            class="d-flex flex-column flex-md-row gap-2 text-uppercase pl-md-4">
+            <li>
+              <a href="./quienSoy.html">¿Quién Soy?</a>
+            </li>
+            <li>
+              <a href="./curriculum.html">Curriculum</a>
+            </li>
+            <li>
+              <a href="./portfolio.html" class="color-quaternary"
+                >< Portafolios ></a
+              >
+            </li>
+            <li>
+              <a href="./contact.html">Contacto</a>
+            </li>
           </ul>
-          <span class="hidden md-block"><strong>@2024</strong></span>
-        </div>
+          <strong class="d-none d-md-block">@2024</strong>
+        </nav>
       </div>
-      <div class="flex md-flex-col">
-        <ul class="flex w-full justify-center gap-8">
+      <div class="d-flex flex-md-column mt-4 mt-md-0">
+        <ul
+          class="d-flex container-fluid align-items-center justify-content-center gap-5">
           <li>
             <a href="https://github.com/tinchods93" target="_blank"
               ><i class="fa-brands fa-github"></i
@@ -325,10 +344,14 @@
             ></a>
           </li>
         </ul>
-        <a href="mailto:mds.designss@gmail.com" class="hidden md-block"
+        <a href="mailto:mds.designss@gmail.com" class="d-none d-md-block"
           ><strong>mds.designss@gmail.com</strong></a
         >
       </div>
     </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
   </body>
 </html>
