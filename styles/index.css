@@ -471,11 +471,13 @@ textarea {
   color: #a4d88b;
 }
 
-#nav-desktop .color-quaternary {
+#nav-desktop .color-quaternary,
+#nav-desktop li .active {
+  color: #86d9ff !important;
   font-weight: 700;
 }
 
-#nav-mobile button {
+/* #nav-mobile button {
   width: 40px;
   height: 40px;
   border-radius: 20px;
@@ -486,11 +488,11 @@ textarea {
   top: 10px;
   right: 10px;
   z-index: 1000;
-}
-#nav-mobile button:hover {
+} */
+/* #nav-mobile button:hover {
   background-color: #bdd0d9;
   color: rgb(37, 37, 42);
-}
+} */
 
 .curriculum-date-container {
   width: 100px;
