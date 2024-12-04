@@ -1,0 +1,30 @@
+@use '../base/variables' as *;
+
+.footer {
+  background-color: $color-primary;
+  color: white;
+  text-align: center;
+  padding: 1em;
+  width: 100%;
+  height: fit-content;
+  font-size: small;
+  justify-content: space-between;
+  overflow-x: hidden;
+
+  i {
+    font-size: 3em;
+  }
+
+  strong {
+    color: $color-secondary;
+  }
+
+  .color-quaternary {
+    font-weight: 700;
+  }
+
+  a {
+    color: white;
+    font-weight: 300;
+  }
+}

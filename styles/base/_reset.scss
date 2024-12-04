@@ -1,0 +1,40 @@
+@use './variables' as *;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+  font-size: 16px !important;
+  background-color: $background-color !important;
+  line-height: 1.5 !important;
+  width: 100% !important;
+  min-height: 100vh !important;
+  min-width: 360px !important;
+  color: $color-terciary !important;
+  display: flex !important;
+  flex-direction: column !important;
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
+  font-family: $font-family !important;
+  font-optical-sizing: auto !important;
+  font-weight: 300 !important;
+  font-style: normal !important;
+
+  a {
+    color: white !important;
+    font-weight: 300 !important;
+    text-decoration: none !important;
+
+    &:hover {
+      color: $color-secondary !important;
+      text-decoration: underline solid 0.1em !important;
+      text-underline-offset: 0.3em !important;
+      font-weight: 600 !important;
+    }
+  }
+}

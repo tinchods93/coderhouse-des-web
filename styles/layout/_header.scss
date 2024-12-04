@@ -1,0 +1,40 @@
+@use '../base/variables' as *;
+
+header {
+  li {
+    a {
+      font-weight: 400 !important;
+    }
+  }
+}
+
+#navbar-burger {
+  color: $color-terciary;
+}
+
+#nav-desktop {
+  background-color: $color-primary;
+  color: white;
+  height: fit-content;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  padding-right: 1rem;
+
+  i {
+    font-size: 1.4em;
+  }
+
+  ul {
+    text-transform: uppercase;
+  }
+
+  strong {
+    color: $color-secondary;
+  }
+
+  .color-quaternary,
+  li .active {
+    @include text-color($color-quaternary);
+    font-weight: 700;
+  }
+}
