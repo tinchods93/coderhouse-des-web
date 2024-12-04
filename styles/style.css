@@ -483,6 +483,10 @@ ul {
   border: 2px solid #bdd0d9;
 }
 
+#navbar-burger {
+  color: #bdd0d9;
+}
+
 #img-collage-perfil {
   padding: 0px;
   width: 100%;

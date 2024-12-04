@@ -451,6 +451,10 @@ ul {
   @include border(all, 2px, $color-terciary);
 }
 
+#navbar-burger{
+  color: $color-terciary;
+}
+
 #img-collage-perfil {
   padding: 0px;
   width: 100%;
