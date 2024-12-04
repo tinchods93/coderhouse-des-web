@@ -593,7 +593,7 @@ ul {
 .skill-card-description {
   opacity: 0;
   max-height: 0;
-  overflow: hidden;
+  overflow-y: auto;
   height: fit-content;
   background-color: #f3f3f3;
   border-radius: 0.5em;
