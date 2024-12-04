@@ -574,7 +574,7 @@ ul {
   &-description {
     opacity: 0;
     max-height: 0;
-    overflow-y: auto;
+    overflow-y: scroll;
     height: fit-content;
     background-color: #f3f3f3;
     border-radius: 0.5em;
