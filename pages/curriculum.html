@@ -9,7 +9,7 @@
     <meta
       name="keywords"
       content="Martín dos Santos, Curriculum, Ingeniero en Software, AWS, Node.js, React, Argentina" />
-    <link rel="stylesheet" href="../styles/index.css" />
+    <link rel="stylesheet" href="../styles/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -29,276 +29,438 @@
   </head>
   <body class="body">
     <header>
-      <div class="d-md-none" id="nav-mobile">
-        <button>
-          <i class="fas fa-bars"></i>
-        </button>
-      </div>
-      <nav class="d-none d-md-flex" id="nav-desktop">
-        <div class="d-flex container-fluid align-items-center">
-          <a href="../index.html">
-            <p>
-              <strong>Martín</strong>
-              dos Santos
-            </p>
+      <nav class="navbar navbar-expand-lg" id="nav-desktop">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">
+            <strong>Martín</strong>
+            <span class="color-quaternary">dos Santos</span>
           </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-md-end"
+            id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./quienSoy.html">¿Quién Soy?</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="./curriculum.html"
+                  >< Curriculum ></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./portfolio.html">Portafolios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contact.html">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link fs-5"
+                  href="https://github.com/tinchods93"
+                  target="_blank"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link fs-5"
+                  href="https://www.instagram.com/martin.dossantoss/"
+                  target="_blank"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <ul class="d-flex container-fluid gap-5 mr-4 justify-content-end">
-          <li><a href="./quienSoy.html">¿Quién Soy?</a></li>
-          <li>
-            <a href="./curriculum.html" class="color-quaternary"
-              >< Curriculum ></a
-            >
-          </li>
-          <li><a href="./portfolio.html">Portafolios</a></li>
-          <li>
-            <a href="./contact.html">Contacto</a>
-          </li>
-          <li>
-            <a href="https://github.com/tinchods93" target="_blank"
-              ><i class="fa-brands fa-github"></i
-            ></a>
-          </li>
-          <li>
-            <a
-              href="https://www.instagram.com/martin.dossantoss/"
-              target="_blank"
-              ><i class="fa-brands fa-instagram"></i
-            ></a>
-          </li>
-        </ul>
       </nav>
-      <div class="d-md-none my-5 mx-2"><h1>Portfolio - Curriculum</h1></div>
+      <div class="d-md-none my-5 mx-2">
+        <h1 class="fs-2 text-center">Portfolio - Curriculum</h1>
+      </div>
     </header>
-    <main
-      class="d-flex flex-column-reverse flex-md-row gap-4 container-fluid justify-content-between px-4">
+    <main class="skill_board">
       <section class="skills_section" name="tecnologias">
         <h2 class="mb-4">TECNOLOGÍAS</h2>
         <ul>
           <li>
-            <div id="curriculum-icon-container">
-              <i class="fab fa-aws"></i>
-            </div>
-            <div class="curriculum-descripcion">
-              <p>
-                <strong>AWS</strong>
-                Sr
-              </p>
-            </div>
-          </li>
-          <li>
-            <div id="curriculum-icon-container">
-              <i class="fas fa-server"></i>
-            </div>
-            <div class="curriculum-descripcion">
-              <p><strong>Serverless Framework</strong> Sr</p>
+            <div class="skill-card">
+              <div class="skill-card-header">
+                <div id="curriculum-icon-container">
+                  <i class="fab fa-aws"></i>
+                </div>
+                <div class="skill-card-title">
+                  <p><strong>AWS</strong> Ssr</p>
+                </div>
+              </div>
             </div>
           </li>
           <li>
-            <div id="curriculum-icon-container">
-              <i class="fab fa-node-js"></i>
-            </div>
-            <div class="curriculum-descripcion">
-              <p><strong>NodeJs</strong> Sr</p>
-            </div>
-          </li>
-          <li>
-            <div id="curriculum-icon-container">
-              <i class="fas fa-code"></i>
-            </div>
-            <div class="curriculum-descripcion">
-              <p><strong>TypeScript</strong> Ssr</p>
+            <div class="skill-card">
+              <div class="skill-card-header">
+                <div id="curriculum-icon-container">
+                  <i class="fas fa-server"></i>
+                </div>
+                <div class="skill-card-title">
+                  <p><strong>Serverless Framework</strong> Ssr</p>
+                </div>
+              </div>
             </div>
           </li>
           <li>
-            <div id="curriculum-icon-container">
-              <i class="fas fa-database"></i>
-            </div>
-            <div class="curriculum-descripcion">
-              <p><strong>MongoDB</strong> Sr</p>
-            </div>
-          </li>
-          <li>
-            <div id="curriculum-icon-container">
-              <i class="fas fa-server"></i>
-            </div>
-            <div class="curriculum-descripcion">
-              <p><strong>Express</strong> Sr</p>
+            <div class="skill-card">
+              <div class="skill-card-header">
+                <div id="curriculum-icon-container">
+                  <i class="fab fa-node-js"></i>
+                </div>
+                <div class="skill-card-title">
+                  <p><strong>NodeJs</strong> Sr</p>
+                </div>
+              </div>
             </div>
           </li>
           <li>
-            <div id="curriculum-icon-container">
-              <i class="fab fa-react"></i>
-            </div>
-            <div class="curriculum-descripcion">
-              <p><strong>React</strong> Jr</p>
-            </div>
-          </li>
-          <li>
-            <div id="curriculum-icon-container">
-              <i class="fab fa-css3-alt"></i>
-            </div>
-            <div class="curriculum-descripcion">
-              <p><strong>Tailwind</strong> Jr</p>
+            <div class="skill-card">
+              <div class="skill-card-header">
+                <div id="curriculum-icon-container">
+                  <i class="fas fa-code"></i>
+                </div>
+                <div class="skill-card-title">
+                  <p><strong>TypeScript</strong> Ssr</p>
+                </div>
+              </div>
             </div>
           </li>
           <li>
-            <div id="curriculum-icon-container">
-              <i class="fab fa-gitlab"></i>
-            </div>
-            <div class="curriculum-descripcion">
-              <p><strong>Gitlab</strong> Sr</p>
-            </div>
-          </li>
-          <li>
-            <div id="curriculum-icon-container">
-              <i class="fas fa-dog"></i>
-            </div>
-            <div class="curriculum-descripcion">
-              <p><strong>Datadog</strong> Jr</p>
+            <div class="skill-card">
+              <div class="skill-card-header">
+                <div id="curriculum-icon-container">
+                  <i class="fas fa-database"></i>
+                </div>
+                <div class="skill-card-title">
+                  <p><strong>MongoDB</strong> Sr</p>
+                </div>
+              </div>
             </div>
           </li>
           <li>
-            <div id="curriculum-icon-container">
-              <i class="fab fa-jira"></i>
+            <div class="skill-card">
+              <div class="skill-card-header">
+                <div id="curriculum-icon-container">
+                  <i class="fas fa-server"></i>
+                </div>
+                <div class="skill-card-title">
+                  <p><strong>Express</strong> Sr</p>
+                </div>
+              </div>
             </div>
-            <div class="curriculum-descripcion">
-              <p><strong>Jira</strong> Sr</p>
+          </li>
+          <li>
+            <div class="skill-card">
+              <div class="skill-card-header">
+                <div id="curriculum-icon-container">
+                  <i class="fab fa-react"></i>
+                </div>
+                <div class="skill-card-title">
+                  <p><strong>React</strong> Jr</p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="skill-card">
+              <div class="skill-card-header">
+                <div id="curriculum-icon-container">
+                  <i class="fab fa-css3-alt"></i>
+                </div>
+                <div class="skill-card-title">
+                  <p><strong>Tailwind</strong> Jr</p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="skill-card">
+              <div class="skill-card-header">
+                <div id="curriculum-icon-container">
+                  <i class="fab fa-gitlab"></i>
+                </div>
+                <div class="skill-card-title">
+                  <p><strong>Gitlab</strong> Sr</p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="skill-card">
+              <div class="skill-card-header">
+                <div id="curriculum-icon-container">
+                  <i class="fas fa-dog"></i>
+                </div>
+                <div class="skill-card-title">
+                  <p><strong>Datadog</strong> Jr</p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="skill-card">
+              <div class="skill-card-header">
+                <div id="curriculum-icon-container">
+                  <i class="fab fa-jira"></i>
+                </div>
+                <div class="skill-card-title">
+                  <p><strong>Jira</strong> Sr</p>
+                </div>
+              </div>
             </div>
           </li>
         </ul>
       </section>
+
       <section class="skills_section" name="experiencia">
         <h2 class="mb-4">EXPERIENCIA</h2>
         <ul>
           <li>
-            <div class="curriculum-date-container">
-              <p>
-                2021
-                <strong>al</strong>
-                2022
-              </p>
-            </div>
-            <div class="curriculum-descripcion">
-              <p><strong>Incluit</strong> Backend Developer Ssr</p>
+            <div class="skill-card">
+              <div class="skill-card-header">
+                <div class="skill-card-date">
+                  <p>2021 <strong>al</strong> 2022</p>
+                </div>
+                <div class="skill-card-title">
+                  <p><strong>Incluit</strong> Backend Developer Ssr</p>
+                </div>
+              </div>
+              <div class="skill-card-description">
+                <ul>
+                  <li>* Desarrollo de microservicios en NodeJs</li>
+                  <li>* Integración con servicios de AWS</li>
+                  <li>* Desarrollo de APIs RESTful con Express.</li>
+                </ul>
+              </div>
             </div>
           </li>
           <li>
-            <div class="curriculum-date-container">
-              <p>
-                2022
-                <strong>al</strong>
-                2024
-              </p>
-            </div>
-            <div class="curriculum-descripcion">
-              <p><strong>Naranja X</strong> Software Engineer Sr</p>
+            <div class="skill-card">
+              <div class="skill-card-header">
+                <div class="skill-card-date">
+                  <p>2022 <strong>al</strong> 2024</p>
+                </div>
+                <div class="skill-card-title">
+                  <p><strong>Naranja X</strong> Software Engineer Sr</p>
+                </div>
+              </div>
+              <div class="skill-card-description">
+                <ul>
+                  <li>
+                    * Arquitectura y Desarrollo de microservicios en NodeJs y
+                    Typescript
+                  </li>
+                  <li>* Integración con servicios de AWS</li>
+                  <li>* Desarrollo de APIs RESTful.</li>
+                </ul>
+              </div>
             </div>
           </li>
         </ul>
       </section>
+
       <section class="skills_section" name="educacion">
         <h2 class="mb-4">EDUCACIÓN</h2>
         <ul>
           <li>
-            <div class="curriculum-date-container">
-              <p>
-                2019
-                <strong>al</strong>
-                2024
-              </p>
-            </div>
-            <div class="curriculum-descripcion">
-              <p><strong>Ingeniería en Sistemas</strong> UnLaR</p>
-            </div>
-          </li>
-          <li>
-            <div class="curriculum-date-container">
-              <p>2011</p>
-            </div>
-            <div class="curriculum-descripcion">
-              <p>
-                <strong>Secundario</strong>
-                Colegio N°1 Joaquin Victor Gonzalez
-              </p>
+            <div class="skill-card">
+              <div class="skill-card-header">
+                <div class="skill-card-date">
+                  <p>2019 <strong>al</strong> 2024</p>
+                </div>
+                <div class="skill-card-title">
+                  <p><strong>Ingeniería en Sistemas</strong> UnLaR</p>
+                </div>
+              </div>
+              <div class="skill-card-description">
+                <p>
+                  Actualmente cursando la carrera de Ingeniería en Sistemas en
+                  la Universidad Nacional de La Rioja.
+                </p>
+              </div>
             </div>
           </li>
         </ul>
       </section>
+
       <section class="skills_section" name="certificaciones">
         <h2 class="mb-4">CERTIFICACIONES</h2>
         <ul>
           <li>
-            <div class="curriculum-date-container">
-              <p>2024</p>
-            </div>
-            <div class="curriculum-descripcion">
-              <p><strong>Solution Architect</strong> AWS</p>
-            </div>
-          </li>
-          <li>
-            <div class="curriculum-date-container">
-              <p>2022</p>
-            </div>
-            <div class="curriculum-descripcion">
-              <p><strong>Cloud Practitioner</strong> AWS</p>
-            </div>
-          </li>
-          <li>
-            <div class="curriculum-date-container">
-              <p>2022</p>
-            </div>
-            <div class="curriculum-descripcion">
-              <p>
-                <strong>Programación Web Fullstack</strong>
-                DigitalHouse
-              </p>
+            <div class="skill-card">
+              <div class="skill-card-header">
+                <div class="skill-card-date">
+                  <p>2024</p>
+                </div>
+                <div class="skill-card-title">
+                  <p><strong>Solution Architect</strong> AWS</p>
+                </div>
+              </div>
+              <div class="skill-card-description">
+                <p>
+                  Certificación de Solution Architect en AWS, con conocimientos
+                  avanzados en arquitectura de soluciones en la nube.
+                </p>
+              </div>
             </div>
           </li>
           <li>
-            <div class="curriculum-date-container">
-              <p>2021</p>
-            </div>
-            <div class="curriculum-descripcion">
-              <p>
-                <strong>Desarrollo frontend con HTML, CSS y JavaScript</strong>
-                Pilartecno La Rioja
-              </p>
-            </div>
-          </li>
-          <li>
-            <div class="curriculum-date-container">
-              <p>2021</p>
-            </div>
-            <div class="curriculum-descripcion">
-              <p>
-                <strong>Desarrollo frontend con React</strong>
-                Pilartecno La Rioja
-              </p>
+            <div class="skill-card">
+              <div class="skill-card-header">
+                <div class="skill-card-date">
+                  <p>2022</p>
+                </div>
+                <div class="skill-card-title">
+                  <p><strong>Cloud Practitioner</strong> AWS</p>
+                </div>
+              </div>
+              <div class="skill-card-description">
+                <p>
+                  Certificación de Cloud Practitioner en AWS, con conocimientos
+                  básicos en servicios de la nube.
+                </p>
+              </div>
             </div>
           </li>
           <li>
-            <div class="curriculum-date-container">
-              <p>2021</p>
-            </div>
-            <div class="curriculum-descripcion">
-              <p><strong>MERN Stack</strong> Pilartecno La Rioja</p>
+            <div class="skill-card">
+              <div class="skill-card-header">
+                <div class="skill-card-date">
+                  <p>2022</p>
+                </div>
+                <div class="skill-card-title">
+                  <p>
+                    <strong>Programación Web Fullstack</strong> DigitalHouse
+                  </p>
+                </div>
+              </div>
+              <div class="skill-card-description">
+                <p>
+                  Certificación de Programación Web Fullstack en DigitalHouse,
+                  con conocimientos en HTML, CSS, JavaScript, NodeJs, y React.
+                </p>
+              </div>
             </div>
           </li>
           <li>
-            <div class="curriculum-date-container">
-              <p>2021</p>
-            </div>
-            <div class="curriculum-descripcion">
-              <p><strong>Python Intermedio</strong> UnLaR</p>
+            <div class="skill-card">
+              <div class="skill-card-header">
+                <div class="skill-card-date">
+                  <p>2021</p>
+                </div>
+                <div class="skill-card-title">
+                  <p>
+                    <strong
+                      >Desarrollo frontend con HTML, CSS y JavaScript</strong
+                    >
+                    Pilartecno La Rioja
+                  </p>
+                </div>
+              </div>
+              <div class="skill-card-description">
+                <p>
+                  Certificación de Desarrollo frontend con HTML, CSS y
+                  JavaScript en Pilartecno La Rioja, con conocimientos en
+                  desarrollo web.
+                </p>
+              </div>
             </div>
           </li>
           <li>
-            <div class="curriculum-date-container">
-              <p>2020</p>
+            <div class="skill-card">
+              <div class="skill-card-header">
+                <div class="skill-card-date">
+                  <p>2021</p>
+                </div>
+                <div class="skill-card-title">
+                  <p>
+                    <strong>Desarrollo frontend con React</strong> Pilartecno La
+                    Rioja
+                  </p>
+                </div>
+              </div>
+              <div class="skill-card-description">
+                <p>
+                  Certificación de Desarrollo frontend con React en Pilartecno
+                  La Rioja, con conocimientos en desarrollo web con React.
+                </p>
+              </div>
             </div>
-            <div class="curriculum-descripcion">
-              <p><strong>Pyton Básico</strong> UnLaR</p>
+          </li>
+          <li>
+            <div class="skill-card">
+              <div class="skill-card-header">
+                <div class="skill-card-date">
+                  <p>2021</p>
+                </div>
+                <div class="skill-card-title">
+                  <p><strong>MERN Stack</strong> Pilartecno La Rioja</p>
+                </div>
+              </div>
+              <div class="skill-card-description">
+                <p>
+                  Certificación de MERN Stack en Pilartecno La Rioja, con
+                  conocimientos en desarrollo web con MongoDB, Express, React y
+                  NodeJs.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="skill-card">
+              <div class="skill-card-header">
+                <div class="skill-card-date">
+                  <p>2021</p>
+                </div>
+                <div class="skill-card-title">
+                  <p><strong>Python Intermedio</strong> UnLaR</p>
+                </div>
+              </div>
+              <div class="skill-card-description">
+                <p>
+                  Certificación de Python Intermedio en la Universidad Nacional
+                  de La Rioja, con conocimientos en desarrollo de aplicaciones
+                  en Python.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="skill-card">
+              <div class="skill-card-header">
+                <div class="skill-card-date">
+                  <p>2020</p>
+                </div>
+                <div class="skill-card-title">
+                  <p><strong>Python Básico</strong> UnLaR</p>
+                </div>
+              </div>
+              <div class="skill-card-description">
+                <p>
+                  Certificación de Python Básico en la Universidad Nacional de
+                  La Rioja, con conocimientos en desarrollo de aplicaciones en
+                  Python.
+                </p>
+              </div>
             </div>
           </li>
         </ul>
