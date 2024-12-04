@@ -9,7 +9,7 @@
     <meta
       name="keywords"
       content="Martín dos Santos, Portafolio, Proyectos, Desarrollo de Software, React, Next.js, Node.js, Argentina" />
-    <link rel="stylesheet" href="../styles/index.css" />
+    <link rel="stylesheet" href="../styles/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -25,14 +25,13 @@
     <script
       src="https://kit.fontawesome.com/b9fbd9565a.js"
       crossorigin="anonymous"></script>
-    <script src="../scripts/githubRepositories.js" defer></script>
     <title>Martín dos Santos - Portafolio de Proyectos</title>
   </head>
   <body class="body">
     <header>
       <nav class="navbar navbar-expand-lg" id="nav-desktop">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="../index.html">
             <strong>Martín</strong>
             <span class="color-quaternary">dos Santos</span>
           </a>
@@ -51,7 +50,9 @@
             id="navbarNavDropdown">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" href="../index.html">Inicio</a>
+                <a class="nav-link" aria-current="page" href="../index.html"
+                  >Inicio</a
+                >
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="./quienSoy.html">¿Quién Soy?</a>
@@ -60,12 +61,7 @@
                 <a class="nav-link" href="./curriculum.html">Curriculum</a>
               </li>
               <li class="nav-item">
-                <a
-                  class="nav-link active"
-                  aria-current="page"
-                  href="./portfolio.html"
-                  >< Portafolios ></a
-                >
+                <a class="nav-link active" href="#">< Portafolios ></a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="./contact.html">Contacto</a>
@@ -103,7 +99,33 @@
           name="ultimos-trabajos"
           class="d-flex flex-column flex-md-row ultimos-trabajos">
           <div class="d-flex flex-column container-fluid">
-            <div id="ultimo-trabajo"></div>
+            <div class="card">
+              <div class="card-header">
+                <h4>Proyecto 1</h4>
+              </div>
+              <div class="card-body">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
+                  inventore rerum id sit iure natus quo voluptas porro quisquam
+                  atque quasi neque quaerat recusandae ducimus, veritatis illum
+                  tempore tenetur, suscipit facilis deleniti sed, fugiat
+                  voluptates dolorum temporibus! Doloribus voluptas tenetur
+                  voluptate distinctio ratione dolorum totam quam a pariatur
+                  libero? Quasi culpa dolores dolore ex? Neque sapiente debitis
+                  ea rerum ducimus impedit dolor vitae recusandae nam
+                  perferendis explicabo dolores cumque, reprehenderit quibusdam.
+                  Quibusdam saepe quis quasi maiores ipsam dolores aspernatur
+                  quidem cupiditate eligendi, optio, hic aliquam possimus
+                  aperiam quod autem, explicabo ea adipisci asperiores ipsa odit
+                  beatae temporibus id ipsum in.
+                </p>
+              </div>
+              <div class="card-footer">
+                <!-- se justifica el uso de span porque cada uno indica uno tiene un estilo aplicado y no es simple texto -->
+                <span>auth0</span>
+                <span>nextjs</span>
+              </div>
+            </div>
             <div
               class="d-none d-md-flex p-12 flex-column justify-content-center">
               <a href="#todos-los-proyectos">
@@ -115,7 +137,7 @@
               </p>
             </div>
           </div>
-          <div class="container-fluid" id="ultimos-trabajos">
+          <div class="container-fluid">
             <div class="card">
               <div class="card-header">
                 <h4>Proyecto 2</h4>
@@ -154,6 +176,7 @@
         </section>
         <section
           name="todos-los-proyectos"
+          id="todos-los-proyectos"
           class="d-flex flex-column flex-md-row">
           <div id="todos-los-proyectos-menu-container">
             <h3>Filtros</h3>
@@ -173,8 +196,7 @@
             </ul>
           </div>
           <div
-            class="d-flex flex-column flex-md-row flex-md-wrap container-fluid justify-content-between"
-            id="todos-los-proyectos">
+            class="d-flex flex-column flex-md-row flex-md-wrap container-fluid justify-content-between">
             <div class="card">
               <div class="card-header">
                 <h4>Proyecto 3</h4>
