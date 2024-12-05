@@ -1,71 +1,7 @@
-$background-color: #2f2f38;
-$color-primary: rgb(37, 37, 42);
-$color-secondary: #a4d88b;
-$color-terciary: #bdd0d9;
-$color-quaternary: #86d9ff;
-$font-family: 'Roboto Mono', monospace;
-
-// Mixin for border styles
-@mixin border($direction: all, $width: 1px, $color: $color-terciary) {
-  @if $direction == all {
-    border: $width solid $color;
-  } @else {
-    border-#{$direction}: $width solid $color;
-  }
-}
-
-// Mixin for text colors
-@mixin text-color($color) {
-  color: $color !important;
-}
-
-// Mixin for font styles
-@mixin font-style($weight, $style: normal) {
-  font-family: $font-family;
-  font-optical-sizing: auto;
-  font-weight: $weight;
-  font-style: $style;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-body {
-  // Tuve que poner todo en important porque si no seguia tomando los estilos del reset de bootstrap
-  margin: 0 !important;
-  padding: 0 !important;
-  font-size: 16px !important;
-  background-color: $background-color !important;
-  line-height: 1.5 !important;
-  width: 100% !important;
-  min-height: 100vh !important;
-  min-width: 360px !important;
-  color: $color-terciary !important;
-  display: flex !important;
-  flex-direction: column !important;
-  overflow-x: hidden !important;
-  overflow-y: auto !important;
-  font-family: $font-family !important;
-  font-optical-sizing: auto !important;
-  font-weight: 300 !important;
-  font-style: normal !important;
-
-  a {
-    color: white !important;
-    font-weight: 300 !important;
-    text-decoration: none !important;
-
-    &:hover {
-      color: $color-secondary !important;
-      text-decoration: underline solid 0.1em !important;
-      text-underline-offset: 0.3em !important;
-      font-weight: 600 !important;
-    }
-  }
-}
+@use './base/variables.scss' as *;
+@use './base/reset.scss' as *;
+@use './layout/header.scss' as *;
+@use './layout/footer.scss' as *;
 
 main {
   width: 100%;
@@ -80,14 +16,6 @@ main {
     text-transform: uppercase;
     text-underline-offset: 0.3em;
     font-weight: 600;
-  }
-}
-
-header {
-  li {
-    a {
-      font-weight: 400 !important;
-    }
   }
 }
 
@@ -264,7 +192,7 @@ ul {
   width: 100%;
 }
 
-.section {
+.mainprofile-section {
   color: $color-terciary;
   display: flex;
   flex-direction: column;
@@ -374,62 +302,6 @@ ul {
   }
 }
 
-.footer {
-  background-color: $color-primary;
-  color: white;
-  text-align: center;
-  padding: 1em;
-  width: 100%;
-  height: fit-content;
-  font-size: small;
-  justify-content: space-between;
-  overflow-x: hidden;
-
-  i {
-    font-size: 3em;
-  }
-
-  strong {
-    color: $color-secondary;
-  }
-
-  .color-quaternary {
-    font-weight: 700;
-  }
-
-  a {
-    color: white;
-    font-weight: 300;
-  }
-}
-
-#nav-desktop {
-  background-color: $color-primary;
-  color: white;
-  height: fit-content;
-  padding-top: 2rem;
-  padding-bottom: 1rem;
-  padding-right: 1rem;
-
-  i {
-    font-size: 1.4em;
-  }
-
-  ul {
-    text-transform: uppercase;
-  }
-
-  strong {
-    color: $color-secondary;
-  }
-
-  .color-quaternary,
-  li .active {
-    @include text-color($color-quaternary);
-    font-weight: 700;
-  }
-}
-
 #todos-los-proyectos-menu-container {
   button {
     background-color: #f8f9fa;
@@ -449,10 +321,6 @@ ul {
 #todos-los-proyectos-menu-filtro-selected {
   background-color: $color-secondary !important;
   @include border(all, 2px, $color-terciary);
-}
-
-#navbar-burger{
-  color: $color-terciary;
 }
 
 #img-collage-perfil {

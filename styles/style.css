@@ -36,6 +36,62 @@ body a:hover {
   font-weight: 600 !important;
 }
 
+header li a {
+  font-weight: 400 !important;
+}
+
+#navbar-burger {
+  color: #bdd0d9;
+}
+
+#nav-desktop {
+  background-color: rgb(37, 37, 42);
+  color: white;
+  height: fit-content;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  padding-right: 1rem;
+}
+#nav-desktop i {
+  font-size: 1.4em;
+}
+#nav-desktop ul {
+  text-transform: uppercase;
+}
+#nav-desktop strong {
+  color: #a4d88b;
+}
+#nav-desktop .color-quaternary,
+#nav-desktop li .active {
+  color: #86d9ff !important;
+  font-weight: 700;
+}
+
+.footer {
+  background-color: rgb(37, 37, 42);
+  color: white;
+  text-align: center;
+  padding: 1em;
+  width: 100%;
+  height: fit-content;
+  font-size: small;
+  justify-content: space-between;
+  overflow-x: hidden;
+}
+.footer i {
+  font-size: 3em;
+}
+.footer strong {
+  color: #a4d88b;
+}
+.footer .color-quaternary {
+  font-weight: 700;
+}
+.footer a {
+  color: white;
+  font-weight: 300;
+}
+
 main {
   width: 100%;
   height: 100%;
@@ -49,10 +105,6 @@ main a {
   text-transform: uppercase;
   text-underline-offset: 0.3em;
   font-weight: 600;
-}
-
-header li a {
-  font-weight: 400 !important;
 }
 
 .skill_board {
@@ -320,7 +372,7 @@ ul {
   width: 100%;
 }
 
-.section {
+.mainprofile-section {
   color: #bdd0d9;
   display: flex;
   flex-direction: column;
@@ -328,10 +380,10 @@ ul {
   justify-content: center;
   align-items: center;
 }
-.section p {
+.mainprofile-section p {
   quotes: "“" "”" "‘" "’";
 }
-.section article {
+.mainprofile-section article {
   max-width: 100%;
   width: 100%;
   height: 100%;
@@ -341,7 +393,7 @@ ul {
   flex-direction: column;
   background-color: rgb(37, 37, 42);
 }
-.section #experiencia {
+.mainprofile-section #experiencia {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -416,54 +468,6 @@ ul {
   font-size: 0.7em;
 }
 
-.footer {
-  background-color: rgb(37, 37, 42);
-  color: white;
-  text-align: center;
-  padding: 1em;
-  width: 100%;
-  height: fit-content;
-  font-size: small;
-  justify-content: space-between;
-  overflow-x: hidden;
-}
-.footer i {
-  font-size: 3em;
-}
-.footer strong {
-  color: #a4d88b;
-}
-.footer .color-quaternary {
-  font-weight: 700;
-}
-.footer a {
-  color: white;
-  font-weight: 300;
-}
-
-#nav-desktop {
-  background-color: rgb(37, 37, 42);
-  color: white;
-  height: fit-content;
-  padding-top: 2rem;
-  padding-bottom: 1rem;
-  padding-right: 1rem;
-}
-#nav-desktop i {
-  font-size: 1.4em;
-}
-#nav-desktop ul {
-  text-transform: uppercase;
-}
-#nav-desktop strong {
-  color: #a4d88b;
-}
-#nav-desktop .color-quaternary,
-#nav-desktop li .active {
-  color: #86d9ff !important;
-  font-weight: 700;
-}
-
 #todos-los-proyectos-menu-container button {
   background-color: #f8f9fa;
   color: #495057;
@@ -481,10 +485,6 @@ ul {
 #todos-los-proyectos-menu-filtro-selected {
   background-color: #a4d88b !important;
   border: 2px solid #bdd0d9;
-}
-
-#navbar-burger {
-  color: #bdd0d9;
 }
 
 #img-collage-perfil {
