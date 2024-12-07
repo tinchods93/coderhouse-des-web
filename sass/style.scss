@@ -130,8 +130,8 @@ ul {
   border-radius: 50%;
 }
 
-.card {
-  background-color: #e3e9eb;
+.custom-card {
+  background-color: white;
   color: $color-primary;
   border-radius: 0.5rem;
   margin: 1rem;
@@ -139,36 +139,69 @@ ul {
   @include border(right, 1em, $color-quaternary);
   max-width: 600px;
   text-align: justify;
-  padding: 0.5rem;
-  height: 100%;
-  max-height: 200px;
+  height: 200px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding: 1em;
+  transition: height 0.5s ease-in-out !important;
+
+  &:hover {
+    height: 400px;
+  }
 
   &-header {
+    padding: 0.5em 0;
     color: $color-primary;
     width: 100%;
     font-weight: 600;
     text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: fit-content;
+
+    h4 {
+      text-wrap: nowrap;
+      font-size: 1.1em;
+    }
+
+    a {
+      color: $color-secondary !important;
+      font-weight: 500 !important;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
   }
 
   &-body {
+    padding: 0.5em 0;
     overflow-y: auto;
-    text-overflow: ellipsis;
-    white-space: normal;
+    height: 60%;
+    background-color: white;
+    border-top: 1px solid $color-quaternary;
+    border-bottom: 1px solid $color-quaternary;
   }
 
   &-footer {
     display: flex;
-    justify-content: end;
-    gap: 1rem;
-
+    justify-content: start;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    padding: 0.5em 0;
+    overflow-y: auto;
+    height: fit-content;
+    align-items: center;
     span {
       background-color: rgb(202, 202, 202);
-      padding: 0.2rem;
+      padding: 0.2rem 0.5rem;
       border-radius: 0.2rem;
       font-weight: 400;
+      font-size: 0.9em;
+      height: fit-content;
     }
   }
 }
@@ -202,6 +235,9 @@ ul {
 
   p {
     quotes: '“' '”' '‘' '’';
+  }
+  article:first-child {
+    height: fit-content;
   }
 
   article {
@@ -500,6 +536,15 @@ ul {
 }
 
 @media screen and (min-width: 768px) {
+  .custom-card {
+    h4 {
+      text-wrap: nowrap;
+      font-size: 1.3em;
+    }
+    &-header {
+      flex-direction: row;
+    }
+  }
   #img-perfil {
     padding: 0px;
     margin-top: 0px;
@@ -543,17 +588,7 @@ ul {
   }
 
   .ultimos-trabajos {
-    justify-content: space-between;
     min-height: 90vh;
-
-    .card {
-      max-height: 400px;
-
-      &-body p {
-        -webkit-line-clamp: 12;
-        line-clamp: 12;
-      }
-    }
 
     .hidden p {
       color: rgba(255, 255, 255, 0.284);
