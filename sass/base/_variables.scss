@@ -1,0 +1,28 @@
+$background-color: #2f2f38;
+$color-primary: rgb(37, 37, 42);
+$color-secondary: #a4d88b;
+$color-terciary: #bdd0d9;
+$color-quaternary: #86d9ff;
+$font-family: 'Roboto Mono', monospace;
+
+// Mixin for border styles
+@mixin border($direction: all, $width: 1px, $color: $color-terciary) {
+  @if $direction == all {
+    border: $width solid $color;
+  } @else {
+    border-#{$direction}: $width solid $color;
+  }
+}
+
+// Mixin for text colors
+@mixin text-color($color) {
+  color: $color !important;
+}
+
+// Mixin for font styles
+@mixin font-style($weight, $style: normal) {
+  font-family: $font-family;
+  font-optical-sizing: auto;
+  font-weight: $weight;
+  font-style: $style;
+}
