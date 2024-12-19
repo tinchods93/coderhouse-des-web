@@ -13,6 +13,7 @@ body {
   min-width: 360px;
   display: flex;
   flex-direction: column;
+  color: #bdd0d9 !important;
   overflow-x: hidden;
   overflow-y: auto;
   font-family: "Roboto Mono", monospace !important;
