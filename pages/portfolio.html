@@ -9,9 +9,16 @@
     <meta
       name="keywords"
       content="Martín dos Santos, Portafolio, Proyectos, Desarrollo de Software, React, Next.js, Node.js, Argentina" />
+    <meta
+      property="og:title"
+      content="Martín dos Santos - Portafolio de Proyectos" />
+    <meta
+      property="og:description"
+      content="Explora el portafolio de Martín dos Santos, Desarrollador especializado en desarrollo de aplicaciones y soluciones tecnológicas." />
+    <meta property="og:image" content="URL_TO_IMAGE" />
+    <meta property="og:url" content="URL_TO_PAGE" />
+    <meta name="twitter:card" content="summary_large_image" />
     <link rel="stylesheet" href="../styles/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -30,7 +37,10 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg" id="nav-desktop">
+      <nav
+        class="navbar navbar-expand-lg"
+        id="nav-desktop"
+        aria-label="Main Navigation">
         <div class="container-fluid">
           <a class="navbar-brand" href="../index.html">
             <strong>Martín</strong>
@@ -100,15 +110,15 @@
           name="ultimos-trabajos"
           class="d-flex flex-column flex-md-row ultimos-trabajos">
           <div class="d-flex flex-column container-fluid">
-            <div class="custom-card" data-aos="fade-up">
-              <div class="custom-card-header">
-                <h4>Coderhouse - JS</h4>
+            <article class="custom-card" data-aos="fade-up">
+              <header class="custom-card-header">
+                <h3>Coderhouse - JS</h3>
                 <a
                   href="https://github.com/tinchods93/coderhouse-js"
                   target="_blank">
                   <i class="fab fa-github"></i> Repositorio
                 </a>
-              </div>
+              </header>
               <div class="custom-card-body">
                 <h4>Entrega 1 - Ta Te Ti</h4>
                 <h5>Descripcion</h5>
@@ -144,13 +154,13 @@
                   <li>* Historial de movimientos.</li>
                 </ul>
               </div>
-              <div class="custom-card-footer">
+              <footer class="custom-card-footer">
                 <!-- se justifica el uso de span porque cada uno tiene un estilo aplicado y no es simple texto -->
                 <span>html</span>
                 <span>css</span>
                 <span>javascript</span>
-              </div>
-            </div>
+              </footer>
+            </article>
             <div class="d-none d-md-flex flex-column justify-content-center">
               <a href="#todos-los-proyectos">
                 <strong>TODOS LOS PROYECTOS</strong></a
@@ -162,15 +172,15 @@
             </div>
           </div>
           <div class="d-flex flex-column container-fluid align-items-end">
-            <div class="custom-card" data-aos="fade-up">
-              <div class="custom-card-header">
-                <h4>auth-email-token</h4>
+            <article class="custom-card" data-aos="fade-up">
+              <header class="custom-card-header">
+                <h3>auth-email-token</h3>
                 <a
                   href="https://github.com/tinchods93/auth-email-token"
                   target="_blank">
                   <i class="fab fa-github"></i> Repositorio
                 </a>
-              </div>
+              </header>
               <div class="custom-card-body">
                 <p>
                   Este proyecto fue desarrollado para comprender el
@@ -178,23 +188,23 @@
                   token enviado por correo electrónico.
                 </p>
               </div>
-              <div class="custom-card-footer">
+              <footer class="custom-card-footer">
                 <span>express</span>
                 <span>jest</span>
                 <span>jsonwebtoken</span>
                 <span>mongodb</span>
                 <span>typescript</span>
-              </div>
-            </div>
-            <div class="custom-card" data-aos="fade-up">
-              <div class="custom-card-header">
-                <h4>auth-users-template</h4>
+              </footer>
+            </article>
+            <article class="custom-card" data-aos="fade-up">
+              <header class="custom-card-header">
+                <h3>auth-users-template</h3>
                 <a
                   href="https://github.com/tinchods93/auth-users-template"
                   target="_blank">
                   <i class="fab fa-github"></i> Repositorio
                 </a>
-              </div>
+              </header>
               <div class="custom-card-body">
                 <h5>Descripción</h5>
                 <p>
@@ -220,14 +230,14 @@
                   <li><p>* Test Driven Development</p></li>
                 </ul>
               </div>
-              <div class="custom-card-footer">
+              <footer class="custom-card-footer">
                 <span>cloudformation</span>
                 <span>serverless</span>
                 <span>jest</span>
                 <span>tsyringe</span>
                 <span>typescript</span>
-              </div>
-            </div>
+              </footer>
+            </article>
           </div>
         </section>
         <section
@@ -253,15 +263,15 @@
           </div>
           <div
             class="d-flex flex-column flex-md-row flex-md-wrap container-fluid justify-content-between">
-            <div class="custom-card" data-aos="fade-up">
-              <div class="custom-card-header">
-                <h4>Coderhouse - JS</h4>
+            <article class="custom-card" data-aos="fade-up">
+              <header class="custom-card-header">
+                <h3>Coderhouse - JS</h3>
                 <a
                   href="https://github.com/tinchods93/coderhouse-js"
                   target="_blank">
                   <i class="fab fa-github"></i> Repositorio
                 </a>
-              </div>
+              </header>
               <div class="custom-card-body">
                 <h4>Entrega 1 - Ta Te Ti</h4>
                 <h5>Descripcion</h5>
@@ -297,22 +307,22 @@
                   <li>* Historial de movimientos.</li>
                 </ul>
               </div>
-              <div class="custom-card-footer">
+              <footer class="custom-card-footer">
                 <!-- se justifica el uso de span porque cada uno indica uno tiene un estilo aplicado y no es simple texto -->
                 <span>html</span>
                 <span>css</span>
                 <span>javascript</span>
-              </div>
-            </div>
-            <div class="custom-card" data-aos="fade-up">
-              <div class="custom-card-header">
-                <h4>auth-email-token</h4>
+              </footer>
+            </article>
+            <article class="custom-card" data-aos="fade-up">
+              <header class="custom-card-header">
+                <h3>auth-email-token</h3>
                 <a
                   href="https://github.com/tinchods93/auth-email-token"
                   target="_blank">
                   <i class="fab fa-github"></i> Repositorio
                 </a>
-              </div>
+              </header>
               <div class="custom-card-body">
                 <p>
                   Este proyecto fue desarrollado para comprender el
@@ -320,23 +330,23 @@
                   token enviado por correo electrónico.
                 </p>
               </div>
-              <div class="custom-card-footer">
+              <footer class="custom-card-footer">
                 <span>express</span>
                 <span>jest</span>
                 <span>jsonwebtoken</span>
                 <span>mongodb</span>
                 <span>typescript</span>
-              </div>
-            </div>
-            <div class="custom-card" data-aos="fade-up">
-              <div class="custom-card-header">
-                <h4>auth-users-template</h4>
+              </footer>
+            </article>
+            <article class="custom-card" data-aos="fade-up">
+              <header class="custom-card-header">
+                <h3>auth-users-template</h3>
                 <a
                   href="https://github.com/tinchods93/auth-users-template"
                   target="_blank">
                   <i class="fab fa-github"></i> Repositorio
                 </a>
-              </div>
+              </header>
               <div class="custom-card-body">
                 <h5>Descripción</h5>
                 <p>
@@ -362,23 +372,23 @@
                   <li><p>* Test Driven Development</p></li>
                 </ul>
               </div>
-              <div class="custom-card-footer">
+              <footer class="custom-card-footer">
                 <span>cloudformation</span>
                 <span>serverless</span>
                 <span>jest</span>
                 <span>tsyringe</span>
                 <span>typescript</span>
-              </div>
-            </div>
-            <div class="custom-card" data-aos="fade-up">
-              <div class="custom-card-header">
-                <h4>aws-file-handler</h4>
+              </footer>
+            </article>
+            <article class="custom-card" data-aos="fade-up">
+              <header class="custom-card-header">
+                <h3>aws-file-handler</h3>
                 <a
                   href="https://github.com/tinchods93/aws-file-handler"
                   target="_blank">
                   <i class="fab fa-github"></i> Repositorio
                 </a>
-              </div>
+              </header>
               <div class="custom-card-body">
                 <h5>Descripción</h5>
                 <p>
@@ -408,23 +418,23 @@
                   <li><p>* Cloudinary</p></li>
                 </ul>
               </div>
-              <div class="custom-card-footer">
+              <footer class="custom-card-footer">
                 <span>cloudformation</span>
                 <span>serverless</span>
                 <span>jest</span>
                 <span>tsyringe</span>
                 <span>typescript</span>
-              </div>
-            </div>
-            <div class="custom-card" data-aos="fade-up">
-              <div class="custom-card-header">
-                <h4>aws-token-security</h4>
+              </footer>
+            </article>
+            <article class="custom-card" data-aos="fade-up">
+              <header class="custom-card-header">
+                <h3>aws-token-security</h3>
                 <a
                   href="https://github.com/tinchods93/aws-token-security"
                   target="_blank">
                   <i class="fab fa-github"></i> Repositorio
                 </a>
-              </div>
+              </header>
               <div class="custom-card-body">
                 <h5>Descripción</h5>
                 <p>
@@ -450,23 +460,23 @@
                   <li><p>* Test Driven Development</p></li>
                 </ul>
               </div>
-              <div class="custom-card-footer">
+              <footer class="custom-card-footer">
                 <span>cloudformation</span>
                 <span>serverless</span>
                 <span>jsonwebtoken</span>
                 <span>tsyringe</span>
                 <span>typescript</span>
-              </div>
-            </div>
-            <div class="custom-card" data-aos="fade-up">
-              <div class="custom-card-header">
-                <h4>aws-custom-authorizer</h4>
+              </footer>
+            </article>
+            <article class="custom-card" data-aos="fade-up">
+              <header class="custom-card-header">
+                <h3>aws-custom-authorizer</h3>
                 <a
                   href="https://github.com/tinchods93/aws-custom-authorizer"
                   target="_blank">
                   <i class="fab fa-github"></i> Repositorio
                 </a>
-              </div>
+              </header>
               <div class="custom-card-body">
                 <h5>Descripción</h5>
                 <p>
@@ -495,14 +505,14 @@
                   </li>
                 </ul>
               </div>
-              <div class="custom-card-footer">
+              <footer class="custom-card-footer">
                 <span>cloudformation</span>
                 <span>api-gateway</span>
                 <span>serverless</span>
                 <span>jsonwebtoken</span>
                 <span>typescript</span>
-              </div>
-            </div>
+              </footer>
+            </article>
           </div>
         </section>
       </div>

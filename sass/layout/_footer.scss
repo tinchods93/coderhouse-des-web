@@ -1,7 +1,7 @@
-@use '../base/variables' as *;
+@use '../base/variables';
 
 .footer {
-  background-color: $color-primary;
+  background-color: variables.$color-primary;
   color: white;
   text-align: center;
   padding: 1em;
@@ -16,7 +16,7 @@
   }
 
   strong {
-    color: $color-secondary;
+    color: variables.$color-secondary;
   }
 
   .color-quaternary {
