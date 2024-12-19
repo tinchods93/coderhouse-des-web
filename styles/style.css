@@ -7,20 +7,20 @@
 
 body {
   padding: 0;
-  background-color: #2f2f38 !important;
+  background-color: #2f2f38;
   width: 100%;
   min-height: 100vh;
   min-width: 360px;
   display: flex;
   flex-direction: column;
-  color: #bdd0d9 !important;
+  color: #bdd0d9;
   overflow-x: hidden;
   overflow-y: auto;
-  font-family: "Roboto Mono", monospace !important;
+  font-family: "Roboto Mono", monospace;
   font-optical-sizing: auto;
-  font-weight: 300 !important;
-  font-style: normal !important;
-  font-size: 16px !important;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 16px;
 }
 body a {
   color: white !important;

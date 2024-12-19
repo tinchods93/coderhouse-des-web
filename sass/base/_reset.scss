@@ -6,24 +6,22 @@
   box-sizing: border-box;
 }
 
-// aqui meti !important en aquellas propiedades
-// que no quiero que se pisen con lo que nos agrega Bootstrap
 body {
   padding: 0;
-  background-color: variables.$background-color !important;
+  background-color: variables.$background-color;
   width: 100%;
   min-height: 100vh;
   min-width: 360px;
   display: flex;
   flex-direction: column;
-  color: variables.$color-terciary !important;
+  color: variables.$color-terciary;
   overflow-x: hidden;
   overflow-y: auto;
-  font-family: variables.$font-family !important;
+  font-family: variables.$font-family;
   font-optical-sizing: auto;
-  font-weight: 300 !important;
-  font-style: normal !important;
-  font-size: 16px !important;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 16px;
 
   a {
     color: white !important;
