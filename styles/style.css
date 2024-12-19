@@ -6,23 +6,20 @@
 }
 
 body {
-  margin: 0 !important;
-  padding: 0 !important;
-  font-size: 16px !important;
+  padding: 0;
   background-color: #2f2f38 !important;
-  line-height: 1.5 !important;
-  width: 100% !important;
-  min-height: 100vh !important;
-  min-width: 360px !important;
-  color: #bdd0d9 !important;
-  display: flex !important;
-  flex-direction: column !important;
-  overflow-x: hidden !important;
-  overflow-y: auto !important;
+  width: 100%;
+  min-height: 100vh;
+  min-width: 360px;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  overflow-y: auto;
   font-family: "Roboto Mono", monospace !important;
-  font-optical-sizing: auto !important;
+  font-optical-sizing: auto;
   font-weight: 300 !important;
   font-style: normal !important;
+  font-size: 16px !important;
 }
 body a {
   color: white !important;

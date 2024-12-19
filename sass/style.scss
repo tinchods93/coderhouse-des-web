@@ -1,7 +1,7 @@
-@use './base/variables.scss' as *;
-@use './base/reset.scss' as *;
-@use './layout/header.scss' as *;
-@use './layout/footer.scss' as *;
+@use './base/variables.scss';
+@use './base/reset.scss';
+@use './layout/header.scss';
+@use './layout/footer.scss';
 
 main {
   width: 100%;
@@ -11,7 +11,7 @@ main {
   padding-bottom: 6em;
 
   a {
-    color: $color-secondary;
+    color: variables.$color-secondary;
     text-decoration: underline solid 0.1em;
     text-transform: uppercase;
     text-underline-offset: 0.3em;
@@ -30,13 +30,13 @@ h3,
 h4,
 h5,
 h6 {
-  color: $color-terciary;
+  color: variables.$color-terciary;
   height: fit-content;
 }
 
 .button-primary {
-  background-color: $color-secondary;
-  color: $color-primary;
+  background-color: variables.$color-secondary;
+  color: variables.$color-primary;
   font-size: medium;
   padding: 1.5em 1em;
   border: none;
@@ -72,42 +72,42 @@ ul {
 
 @each $weight in (100, 200, 400, 500, 600, 700) {
   .roboto-mono-#{$weight} {
-    @include font-style($weight);
+    @include variables.font-style($weight);
   }
 
   .roboto-mono-#{$weight}-italic {
-    @include font-style($weight, italic);
+    @include variables.font-style($weight, italic);
   }
 }
 
 .color-primary {
-  @include text-color($color-primary);
+  @include variables.text-color(variables.$color-primary);
 }
 
 .color-secondary {
-  @include text-color($color-secondary);
+  @include variables.text-color(variables.$color-secondary);
 }
 
 .color-terciary {
-  @include text-color($color-terciary);
+  @include variables.text-color(variables.$color-terciary);
 }
 
 .color-quaternary {
-  @include text-color($color-quaternary);
+  @include variables.text-color(variables.$color-quaternary);
 }
 
 @each $direction in (top, bottom, left, right) {
   .border-#{$direction} {
-    @include border($direction);
+    @include variables.border($direction);
   }
 
   .border-#{$direction}-2 {
-    @include border($direction, 2px);
+    @include variables.border($direction, 2px);
   }
 }
 
 .border {
-  @include border();
+  @include variables.border();
 }
 
 .border-radius {
@@ -132,11 +132,11 @@ ul {
 
 .custom-card {
   background-color: white;
-  color: $color-primary;
+  color: variables.$color-primary;
   border-radius: 0.5rem;
   margin: 1rem;
-  @include border(left, 1em, $color-quaternary);
-  @include border(right, 1em, $color-quaternary);
+  @include variables.border(left, 1em, variables.$color-quaternary);
+  @include variables.border(right, 1em, variables.$color-quaternary);
   max-width: 600px;
   text-align: justify;
   height: 200px;
@@ -152,7 +152,7 @@ ul {
 
   &-header {
     padding: 0.5em 0;
-    color: $color-primary;
+    color: variables.$color-primary;
     width: 100%;
     font-weight: 600;
     text-transform: uppercase;
@@ -168,7 +168,7 @@ ul {
     }
 
     a {
-      color: $color-secondary !important;
+      color: variables.$color-secondary !important;
       font-weight: 500 !important;
       text-decoration: none;
       &:hover {
@@ -182,8 +182,8 @@ ul {
     overflow-y: auto;
     height: 60%;
     background-color: white;
-    border-top: 1px solid $color-quaternary;
-    border-bottom: 1px solid $color-quaternary;
+    border-top: 1px solid variables.$color-quaternary;
+    border-bottom: 1px solid variables.$color-quaternary;
   }
 
   &-footer {
@@ -211,7 +211,7 @@ ul {
   border-radius: 50%;
   width: 100%;
   height: 100%;
-  border: 2px solid $color-primary;
+  border: 2px solid variables.$color-primary;
   object-fit: cover;
   max-width: 400px;
   max-height: 400px;
@@ -226,7 +226,7 @@ ul {
 }
 
 .mainprofile-section {
-  color: $color-terciary;
+  color: variables.$color-terciary;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -248,7 +248,7 @@ ul {
     padding: 1em;
     display: flex;
     flex-direction: column;
-    background-color: $color-primary;
+    background-color: variables.$color-primary;
   }
 
   #experiencia {
@@ -274,14 +274,14 @@ ul {
     display: flex;
     flex-direction: column;
     gap: 1em;
-    color: $color-primary;
+    color: variables.$color-primary;
     border-radius: 0.2em;
     max-width: 350px;
     max-height: fit-content;
 
     h3 {
       text-align: center;
-      color: $color-primary;
+      color: variables.$color-primary;
     }
 
     .form-input {
@@ -355,8 +355,8 @@ ul {
 }
 
 #todos-los-proyectos-menu-filtro-selected {
-  background-color: $color-secondary !important;
-  @include border(all, 2px, $color-terciary);
+  background-color: variables.$color-secondary !important;
+  @include variables.border(all, 2px, variables.$color-terciary);
 }
 
 #img-collage-perfil {
@@ -369,7 +369,7 @@ ul {
   min-width: 200px;
   min-height: 200px;
   border-radius: 0.6em;
-  @include border(all, 0.6em, white);
+  @include variables.border(all, 0.6em, white);
   margin-top: 5em;
 }
 
@@ -423,14 +423,14 @@ ul {
   width: 100%;
   max-width: 20rem;
   padding: 1em;
-  color: $background-color;
+  color: variables.$background-color;
   border-radius: 10px;
-  @include border(all, 2px, $color-terciary);
+  @include variables.border(all, 2px, variables.$color-terciary);
   font-weight: 400;
   transition: border 0.5s ease-in-out;
 
   &:hover {
-    @include border(all, 4px, $color-terciary);
+    @include variables.border(all, 4px, variables.$color-terciary);
     cursor: pointer;
   }
 
@@ -452,11 +452,11 @@ ul {
     height: 100px;
     min-width: 100px;
     min-height: 100px;
-    background-color: $color-terciary;
-    color: $color-primary;
+    background-color: variables.$color-terciary;
+    color: variables.$color-primary;
     padding: 10px;
     border-radius: 50%;
-    @include border(all, 2px, white);
+    @include variables.border(all, 2px, white);
     scale: 0.9;
 
     p {
@@ -510,24 +510,24 @@ ul {
 
 @keyframes glow {
   0% {
-    box-shadow: 0 0 10px $background-color;
-    border: 10px solid $background-color;
+    box-shadow: 0 0 10px variables.$background-color;
+    border: 10px solid variables.$background-color;
   }
   25% {
     box-shadow: 0 0 40px blue;
     border: 10px solid blue;
   }
   50% {
-    box-shadow: 0 0 40px $color-secondary;
-    border: 10px solid $color-secondary;
+    box-shadow: 0 0 40px variables.$color-secondary;
+    border: 10px solid variables.$color-secondary;
   }
   75% {
-    box-shadow: 0 0 40px $color-quaternary;
-    border: 10px solid $color-quaternary;
+    box-shadow: 0 0 40px variables.$color-quaternary;
+    border: 10px solid variables.$color-quaternary;
   }
   100% {
-    box-shadow: 0 0 10px $background-color;
-    border: 10px solid $background-color;
+    box-shadow: 0 0 10px variables.$background-color;
+    border: 10px solid variables.$background-color;
   }
 }
 

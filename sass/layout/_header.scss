@@ -1,4 +1,4 @@
-@use '../base/variables' as *;
+@use '../base/variables';
 
 header {
   li {
@@ -9,11 +9,11 @@ header {
 }
 
 #navbar-burger {
-  color: $color-terciary;
+  color: variables.$color-terciary;
 }
 
 #nav-desktop {
-  background-color: $color-primary;
+  background-color: variables.$color-primary;
   color: white;
   height: fit-content;
   padding-top: 2rem;
@@ -29,12 +29,12 @@ header {
   }
 
   strong {
-    color: $color-secondary;
+    color: variables.$color-secondary;
   }
 
   .color-quaternary,
   li .active {
-    @include text-color($color-quaternary);
+    @include variables.text-color(variables.$color-quaternary);
     font-weight: 700;
   }
 }
